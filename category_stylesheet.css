@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adding margin to the main page */
+}
+.categories {
+    width: 100%;
+    max-width: 800px;
+}
+.categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.categories ul {
+    list-style-type: none; /* Remove the dots from the list */
+    padding: 0;
+}
+.category-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+}
+.category-box {
+    background: #83bdf8;
+    padding: 15px;
+    border-radius: 10px; /* Rounded edges for category boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+.category-box:hover {
+    background-color: #e0e0e0;
+}
+.category-box h3 {
+    margin: 0;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

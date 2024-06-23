@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>NEXT IMPACT</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="category_stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a class="logo" href="index.html">
+        <img alt="Logo" src="logo2.jpg">
+      </a>
+      <nav class="topnav">
+        <a href="index.html">ホーム</a>
+        <a href="about.html">私たちについて</a>
+        <a href="services.html">サービス</a>
+        <a href="company.html">会社概要</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+      <div class="social-media-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="menu-bar" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="categories">
+      <h2>高齢者の方や介護をする方に向けた支援金</h2>
+      <ul>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('kaigo', '介護休業給付金')">
+            <div class="category-box">
+              <h3>介護休業給付金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('parent', '高齢者雇用継続給付金')">
+            <div class="category-box">
+              <h3>高齢者雇用継続給付金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('sumai', '住まい給付金')">
+            <div class="category-box">
+              <h3>住まい給付金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('senior', '住宅省エネリノベーション促進事業費補助金')">
+            <div class="category-box">
+              <h3>住宅省エネリノベーション促進事業費補助金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('jutaku_repair', '住宅改修')">
+            <div class="category-box">
+              <h3>住宅改修</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('senior', '特別支給の老齢生年金')">
+            <div class="category-box">
+              <h3>特別支給の老齢生年金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('senior', 'シニア起業家給付金')">
+            <div class="category-box">
+              <h3>シニア起業家給付金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('kaigo_service', '高額介護サービス費')">
+            <div class="category-box">
+              <h3>高額介護サービス費</h3>
+            </div>
+          </button>
+        </li>
+      </ul>
+      <h2>子育てや過程を支える方に向けた支援金</h2>
+      <ul>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('shussan', '出産育児一時金')">
+            <div class="category-box">
+              <h3>出産育児一時金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('sumai_q1', '住まい給付金')">
+            <div class="category-box">
+              <h3>住まい給付金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('jutakuloan', '住宅ローン減税制度')">
+            <div class="category-box">
+              <h3>住宅ローン減税制度</h3>
+            </div>
+          </button>
+        </li>
+      </ul>
+      <h2>申請期限が迫る特別給付金</h2>
+      <ul>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('student', '新型コロナウイルス感染症特別貸付')">
+            <div class="category-box">
+              <h3>新型コロナウイルス感染症特別貸付</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('parent', '電気・ガス・電話料金やNHK受信料等の支払い')">
+            <div class="category-box">
+              <h3>電気・ガス・電話料金やNHK受信料等の支払い</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('bgata', 'B型肝炎給付金')">
+            <div class="category-box">
+              <h3>B型肝炎給付金</h3>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="category-button" onclick="setCategoryAndNavigate('sougou', '総合支援金')">
+            <div class="category-box">
+              <h3>総合支援金</h3>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    function toggleMenu() {
+      var x = document.querySelector(".topnav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    function setCategoryAndNavigate(category, name) {
+      localStorage.setItem('categoryName', name);
+      window.location.href = `question.html?category=${category}&q=0`;
+    }
+  </script>
+</body>
+</html>

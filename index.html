@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link href="stylesheet.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>NEXT IMPACT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a class="logo" href="index.html">
+        <img alt="Logo" src="logo2.jpg">
+      </a>
+      <nav class="topnav">
+        <a href="#home">ホーム</a>
+        <a href="#about">私たちについて</a>
+        <a href="#services">サービス</a>
+        <a href="#company">会社概要</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <div class="social-media-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="menu-bar" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="top-content">
+      <div class="overlay">
+        <h1>株式会社ネクストインパクト</h1>
+        <p>人々に更なる影響を与え、未来に Commit する会社である</p>
+      </div>
+    </section>
+    <!-- <section class="parent">
+      <img alt="Top Image" class="top-image" src="background_img.jpg">
+    </section> -->
+    <section class="service">
+        <div class="overlay">
+            <h1>SERVICE</h1>
+            <h2>- 自分に当てはまる支援金が分からない -<br></h2>
+            <p>簡単な質問に答えていただき、自分が申請の<br>対象であるか素早く CHECK 出来るシステム</p>
+        </div>      
+    </section>
+    <section class="yellow-rectangle">
+      <div class="inner-content">
+        <h1>～支援をもっと身近に～</h1>
+        <p>あなたが気になる支援金を探し、申請対象であるか</p>
+        <a class="cta-button" href="category.html">Check</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      var x = document.querySelector(".topnav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

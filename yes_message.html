@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>株式会社ネクストインパクト</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="category_style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    }
+    main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    }
+    .message-container {
+      max-width: 600px;
+      padding: 20px;
+      background: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a class="logo" href="index.html">
+        <img alt="Logo" src="logo2.jpg">
+      </a>
+      <nav class="topnav">
+        <a href="index.html">ホーム</a>
+        <a href="about.html">私たちについて</a>
+        <a href="services.html">サービス</a>
+        <a href="company.html">会社概要</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+      <div class="social-media-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="menu-bar" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="message-container">
+      <p>50万円から3600万円の給付が国から支払われる可能性が高いです。</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      var x = document.querySelector(".topnav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

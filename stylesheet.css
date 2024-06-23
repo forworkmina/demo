@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background: white;
+    color: black;
+    padding: 0em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+  }
+  
+  .logo img {
+    height: 150px;
+    margin-right: 10px;
+  }
+  
+  .topnav {
+    display: flex;
+    gap: 3em;
+  }
+  
+  .topnav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    gap: 1em;
+    font-size: 1.5em;
+  }
+  
+  .menu-bar {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-bar .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+  }
+  
+  .top-content {
+    position: relative;
+    background: url('background_img.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5em 2em;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 2em;
+    width: 80%;
+  }
+  
+  .overlay h1 {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .overlay p {
+    font-size: 2em;
+  }
+
+  .service{
+    position: relative;
+    background: url('system.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5em 2em;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+  }
+
+  .service h2{
+    font-size: 2.5em;
+  }
+  
+  .parent {
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .yellow-rectangle {
+    background: #a5c9ff;
+    padding: 2em;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .topnav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .menu-bar {
+      display: flex;
+    }
+  
+    .overlay h1 {
+      font-size: 2em;
+    }
+  
+    .overlay p {
+      font-size: 1em;
+    }
+  }
+  
