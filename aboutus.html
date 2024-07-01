@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXT IMPACTについて | 株式会社ネクストインパクト</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="about_stylesheet.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a class="logo" href="index.html">
+        <img alt="Logo" src="logo.png">
+      </a>
+      <nav class="topnav">
+        <a href="index.html">ホーム</a>
+        <a href="aboutus.html">NEXTIMPACTについて</a>
+        <!-- <a href="#services">サービス</a> -->
+        <a href="company.html">会社概要</a>
+        <a href="business.html">事業内容</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+      <div class="social-media-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="menu-bar" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about-section">
+        <div class="overlay" class="animate__animated animate__fadeInUp animate__delay-1s">
+            <h1>NEXT IMPACTについて</h1>
+            <h3>About NEXT IMPACT</p>
+          </div>
+    </section>
+    <section class="about-content">
+        <h4>私たちは人々の暮らしを豊かにするサポートにおいて<br>最善のお力添えをさせていただきます。</p>
+        <p>NEXT IMPACTは子育てと仕事の両立に励む方から<br>事業立ち上げ・事業拡大を考えている経営者の方・介護が<br>必要な高齢者の方まで幅広い方をサポートをし、
+          <br>存在意義が高い会社であり続ける事を約束いたします。</p>
+    </section>
+</main>
+  <footer>
+    <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+        const nav = document.querySelector('.topnav');
+        nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+</body>
+</html>

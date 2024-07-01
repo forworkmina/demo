@@ -1,0 +1,65 @@
+  .company-top {
+    position: relative;
+    height: 45vh;
+    background: url('aboutus.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.company-top .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 20px; */
+    padding-bottom: 50px;
+    padding-left: 0px;
+    text-align: center;
+    
+  }
+
+.company-top .overlay h1{
+    font-family: Georgia, serif;
+}
+
+.company-top .overlay p{
+    font-family: system-ui;
+}
+
+.company-content {
+    max-width: 600px;
+    padding: 20px;
+    /* background: #f4f4f4; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+
+  }
+  .company-content p{
+    color: black;
+  }
+
+.company-content h2{
+    color:#333;
+}
+
+.company-content p{
+    color:#333;
+    font-size: 16px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    }

@@ -28,8 +28,7 @@ body {
   }
   
   .logo img {
-    height: 150px;
-    margin-right: 10px;
+    height: 70px;
   }
   
   .topnav {
@@ -40,7 +39,7 @@ body {
   .topnav a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .social-media-icons {
@@ -62,46 +61,28 @@ body {
     margin: 4px 0;
   }
   
-  /* .top-content {
-    position: relative;
-    background: url('background_img.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 5em 2em;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .overlay {
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 2em;
-    width: 80%;
-  }
-  
-  .overlay h1 {
-    font-size: 5em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-  
-  .overlay p {
-    font-size: 2em;
-  } */
-
-  /* animation */
   .top-content {
     position: relative;
     height: 100vh;
-    background: url('background_img.jpg') no-repeat center center/cover;
+    background: url('background_img2.jpg') no-repeat center center/cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     overflow: hidden;
   }
   
-  .overlay {
+  .top-content .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 20px; */
+    padding-bottom: 80px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .overlay_service {
     position: absolute;
     width: 70%;
     height: 70%;
@@ -131,15 +112,11 @@ body {
     }
   } 
 
-  h1, p {
-    color: white;
-    margin: 0;
-  }
-
   h1 {
     font-size: 3em;
     margin-bottom: 20px;
     animation: fadeInUp 4s forwards; /* Background overlay appears immediately */
+    color: black;
   }
 
   p {
@@ -154,7 +131,7 @@ body {
 
   h3 {
     font-size: 1.5em;
-    color: white;
+    color: black;
     animation: fadeInUp 4s forwards; /* Background overlay appears immediately */
   }
 

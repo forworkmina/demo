@@ -1,0 +1,115 @@
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+  }
+  
+  .header-container .logo img {
+    height: 50px;
+  }
+  
+  .topnav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+  }
+  
+  .social-media-icons a {
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .menu-bar {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-bar .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  } */
+  
+ .about-section {
+    position: relative;
+    height: 45vh;
+    background: url('aboutus.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.about-section .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 20px; */
+    padding-bottom: 50px;
+    padding-left: 0px;
+    text-align: center;
+    
+  }
+
+.about-section .overlay h1{
+    font-family: Georgia, serif;
+}
+
+.about-section .overlay p{
+    font-family: system-ui;
+}
+
+.about-content {
+  max-width: 600px;
+  padding: 20px;
+  /* background: #f4f4f4; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+
+}
+
+.about-content h2{
+    color:#333;
+}
+
+.about-content h4{
+  font-family: Georgia, serif;
+}
+
+.about-content p{
+    color:#333;
+    font-size: 16px;
+    font-family: Georgia, serif;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  }
