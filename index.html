@@ -4,6 +4,7 @@
   <link href="stylesheet.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="chatbot.css">
   <title>NEXT IMPACT</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,6 +63,23 @@
   <footer>
     <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
   </footer>
+
+   <!-- Chatbot HTML structure -->
+   <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+        チャットボット
+    </div>
+    <div class="chat-body" id="chatBody">
+        <!-- Chat messages will appear here -->
+    </div>
+    <div class="chat-footer">
+        <button class="chat-button" onclick="getResponse('option1')">オプション 1</button>
+        <button class="chat-button" onclick="getResponse('option2')">オプション 2</button>
+        <button class="chat-button" onclick="getResponse('option3')">オプション 3</button>
+    </div>
+  </div>
+  <button class="chat-toggle" id="chatToggle">お困りの方はこちら</button>
+
   <script>
     function toggleMenu() {
       var x = document.querySelector(".topnav");
@@ -72,5 +90,6 @@
       }
     }
   </script>
+  <script src="chatbot.js"></script>
 </body>
 </html>
