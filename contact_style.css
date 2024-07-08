@@ -57,20 +57,8 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     }
 
-/* @media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-    }
-    .topnav {
-        display: none;
-        flex-direction: column;
-    }
-    .menu-bar {
-        display: block;
-    }
-} */

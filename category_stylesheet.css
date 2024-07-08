@@ -56,3 +56,20 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topnav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .menu-bar {
+      display: flex;
+    }
+
+    .categories h2{
+      font-size: 1.2em;
+    }
+  }
