@@ -4,6 +4,8 @@
     background: #fff;
     margin: 4px;
   }
+
+  
   
   .company-top {
     position: relative;
@@ -26,6 +28,7 @@
   
   .company-top .overlay h1 {
     font-family: Georgia, serif;
+    font-size: 3em;
   }
   
   .company-content {

@@ -1,17 +1,7 @@
-/* .chat-widget {
+/* Chat Widget Styles */
+.chat-widget {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    display: none;
-} */
-#chatWidget {
-    position: fixed;
-    bottom: 80px; /* Adjusted to leave space for the other button */
+    bottom: 80px;
     right: 20px;
     width: 300px;
     background-color: white;
@@ -22,9 +12,17 @@
     display: none;
 }
 .chat-header, .chat-footer {
+    display: flex;
+    align-items: center;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
+}
+.chat-header .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 .chat-body {
     padding: 10px;
@@ -42,24 +40,47 @@
     cursor: pointer;
 }
 .chat-message {
+    display: flex;
+    align-items: center;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
-  }
-/* .chat-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    background-color: #f1f1f1;
+}
+.chat-message.bot-message {
+    text-align: left;
+}
+.chat-message.user-message {
+    text-align: right;
+    background-color: #e0f7fa;
+}
+.chat-message .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chat-message.user-message .avatar {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.chat-message .message-text {
+    max-width: 220px;
+    word-wrap: break-word;
+}
+.chat-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 50px;
     cursor: pointer;
-} */
-#chatToggle {
+}
+.chat-toggle {
     position: fixed;
-    bottom: 20px; /* Adjusted to leave space for the other button */
+    bottom: 20px;
     right: 20px;
     background-color: #007BFF;
     color: white;
@@ -68,17 +89,11 @@
     cursor: pointer;
     z-index: 1000;
 }
-.bot-message {
-    background-color: #f1f1f1;
-    text-align: left;
-  }
-
-  .user-message {
-    background-color: #e0f7fa;
-    text-align: right;
-  }
-
-  #chatBody button {
+.close-btn {
+    margin-left: auto;
+    cursor: pointer;
+}
+#chatBody button {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
@@ -92,13 +107,4 @@
 
 #chatBody button:hover {
     background-color: #0056b3;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    color: white;
 }

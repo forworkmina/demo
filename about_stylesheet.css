@@ -70,6 +70,11 @@
 
 .about-section .overlay h1{
     font-family: Georgia, serif;
+    font-size: 3em;
+}
+.about-section .overlay h3{
+  font-family: Georgia, serif;
+  font-size: 1.5em;
 }
 
 .about-section .overlay p{
