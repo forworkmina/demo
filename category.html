@@ -37,129 +37,73 @@
   </header>
   <main>
     <section class="categories">
-      <h2>高齢者の方や介護をする方に向けた支援金</h2>
-      <ul>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('kaigo', '介護休業給付金')">
-            <div class="category-box">
-              <h3>介護休業給付金</h3>
-            </div>
-          </button>
+      <h2>支援金情報</h2>
+      <ul id="categoryList">
+        <!-- Example category items -->
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="介護休業給付金">
+          <div class="category-box">
+            <h3>介護休業給付金</h3>
+            <h4>全国対象　上限金額 約35万円</h4>
+            <p>雇用保険の被保険者で一定の条件を満たす方が、職場復帰を前提として家族を介護するために介護休業を取得した場合に支給される給付金です。</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('parent', '高齢者雇用継続給付金')">
-            <div class="category-box">
-              <h3>高齢者雇用継続給付金</h3>
-            </div>
-          </button>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="住まい給付金">
+          <div class="category-box">
+            <h3>住まい給付金</h3>
+            <h4>全国対象　上限金額 約30万円</h4>
+            <p>消費税率引上げによる住宅取得者の負担をかなりの程度緩和するために創設した制度です。</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('sumai', '住まい給付金')">
-            <div class="category-box">
-              <h3>住まい給付金</h3>
-            </div>
-          </button>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="住宅省エネリノベーション促進事業費補助金">
+          <div class="category-box">
+            <h3>住宅省エネリノベーション促進事業費補助金</h3>
+            <h4>全国対象　上限金額 上限金額　約30万〜60万</h4>
+            <p>住宅の省エネ化を図るリノベーションを促進するために、既築住宅の所有者等による高性能な断熱材や窓等を用いた断熱改修を支援すると共に、戸建住宅においては、この断熱改修と同時に行う高性能な家庭用設備（高効率給湯機等）の導入・改修支援を行う支援金です。</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('senior', '住宅省エネリノベーション促進事業費補助金')">
-            <div class="category-box">
-              <h3>住宅省エネリノベーション促進事業費補助金</h3>
-            </div>
-          </button>
+        <!-- <li class="category-item" data-area="all" data-category="company" data-keywords="小規模事業者持続化補助金">
+          <div class="category-box">
+            <h3>小規模事業者持続化補助金</h3>
+            <p>東京都対象　上限金額 約50万円</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('jutaku_repair', '住宅改修')">
-            <div class="category-box">
-              <h3>住宅改修</h3>
-            </div>
-          </button>
+        <li class="category-item" data-area="all" data-category="normal" data-keywords="子育て支援金">
+          <div class="category-box">
+            <h3>子育て支援金</h3>
+            <p>大阪府対象　上限金額 約10万円</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('senior', '特別支給の老齢生年金')">
-            <div class="category-box">
-              <h3>特別支給の老齢生年金</h3>
-            </div>
-          </button>
+        <li class="category-item" data-area="all" data-category="normal" data-keywords="住まいの給付金">
+          <div class="category-box">
+            <h3>住まいの給付金</h3>
+            <p>愛知県対象　上限金額 約20万円</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('senior', 'シニア起業家給付金')">
-            <div class="category-box">
-              <h3>シニア起業家給付金</h3>
-            </div>
-          </button>
+        <li class="category-item" data-area="all" data-category="company" data-keywords="事業再構築補助金">
+          <div class="category-box">
+            <h3>事業再構築補助金</h3>
+            <p>北海道対象　上限金額 約100万円</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('kaigo_service', '高額介護サービス費')">
-            <div class="category-box">
-              <h3>高額介護サービス費</h3>
-            </div>
-          </button>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="高齢者住宅改修費補助金">
+          <div class="category-box">
+            <h3>高齢者住宅改修費補助金</h3>
+            <p>福岡県対象　上限金額 約25万円</p>
+          </div>
         </li>
-      </ul>
-      <h2>子育てや過程を支える方に向けた支援金</h2>
-      <ul>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('shussan', '出産育児一時金')">
-            <div class="category-box">
-              <h3>出産育児一時金</h3>
-            </div>
-          </button>
+        <li class="category-item" data-area="all" data-category="company" data-keywords="観光業支援金">
+          <div class="category-box">
+            <h3>観光業支援金</h3>
+            <p>沖縄県対象　上限金額 約70万円</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('sumai_q1', '住まい給付金')">
-            <div class="category-box">
-              <h3>住まい給付金</h3>
-            </div>
-          </button>
+        <li class="category-item" data-area="all" data-category="normal" data-keywords="教育支援金">
+          <div class="category-box">
+            <h3>教育支援金</h3>
+            <p>静岡県対象　上限金額 約15万円</p>
+          </div>
         </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('jutakuloan', '住宅ローン減税制度')">
-            <div class="category-box">
-              <h3>住宅ローン減税制度</h3>
-            </div>
-          </button>
-        </li>
-      </ul>
-      <h2>申請期限が迫る特別給付金</h2>
-      <ul>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('student', '新型コロナウイルス感染症特別貸付')">
-            <div class="category-box">
-              <h3>新型コロナウイルス感染症特別貸付</h3>
-            </div>
-          </button>
-        </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('parent', '電気・ガス・電話料金やNHK受信料等の支払い')">
-            <div class="category-box">
-              <h3>電気・ガス・電話料金やNHK受信料等の支払い</h3>
-            </div>
-          </button>
-        </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('bgata', 'B型肝炎給付金')">
-            <div class="category-box">
-              <h3>B型肝炎給付金</h3>
-            </div>
-          </button>
-        </li>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('sougou', '総合支援金')">
-            <div class="category-box">
-              <h3>総合支援金</h3>
-            </div>
-          </button>
-        </li>
-      </ul>
-      <h2>会社立ち上げ・事業拡大など企業の方が対象の支援金</h2>
-      <ul>
-        <li>
-          <button class="category-button" onclick="setCategoryAndNavigate('monodukuri', 'ものづくり支援金'); location.href='monodukuri.html';">
-            <div class="category-box">
-              <h3>ものづくり支援金</h3>
-            </div>
-          </button>
-        </li>
+        Add more category items as needed -->
       </ul>
     </section>
   </main>
@@ -168,18 +112,46 @@
   </footer>
   
   <script>
-    function toggleMenu() {
-      var x = document.querySelector(".topnav");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
+    function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            area: params.get('area') || '',
+            industry: params.get('category') || '',
+            keyword: params.get('keyword') || ''
+        };
     }
-    function setCategoryAndNavigate(category, name) {
-      localStorage.setItem('categoryName', name);
-      window.location.href = `question.html?category=${category}&q=0`;
+
+    function filterCategories() {
+        const { area, category, keyword } = getQueryParams();
+        const categories = document.querySelectorAll('.category-item');
+
+        categories.forEach(categoryItem => {
+            const itemArea = categoryItem.dataset.area;
+            const itemCategory = categoryItem.dataset.category;
+            const itemKeywords = categoryItem.dataset.keywords;
+
+            let matches = true;
+
+            if (area && itemArea !== area) {
+                matches = false;
+            }
+            if (category && itemCategory !== category) {
+                matches = false;
+            }
+            if (keyword && !itemKeywords.includes(keyword)) {
+                matches = false;
+            }
+
+            if (matches) {
+                categoryItem.style.display = 'block';
+            } else {
+                categoryItem.style.display = 'none';
+            }
+        });
     }
+
+    document.addEventListener('DOMContentLoaded', filterCategories);
   </script>
+  
 </body>
 </html>

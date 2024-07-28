@@ -12,6 +12,8 @@ main {
     align-items: center;
     padding: 20px; /* Adding margin to the main page */
 }
+
+
 .categories {
     width: 100%;
     max-width: 800px;
@@ -46,6 +48,9 @@ main {
 }
 .category-box h3 {
     margin: 0;
+}
+.category-box h4 {
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer {
     background: #333;

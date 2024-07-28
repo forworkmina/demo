@@ -205,7 +205,10 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
-}
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -220,6 +223,7 @@ footer {
   }
 
   .top-content h1 {
+    font-size: 2em;
     color: black; /* Change text color for smaller screens */
     text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff;
   }

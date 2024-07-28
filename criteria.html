@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+  <title>補助金・助成金を探す | 株式会社ネクストインパクト</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="criteria.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <h1>補助金・助成金を探す</h1>
+        <form id="criteriaForm">
+            <div class="filter-group">
+                <label for="area">エリア</label>
+                <select id="area" name="area">
+                    <option value="all">すべて</option>
+                    <option value="Hokkaido">北海道</option>
+                    <option value="Aomori">青森県</option>
+                    <option value="Iwate">岩手県</option>
+                    <option value="Miyagi">宮城県</option>
+                    <option value="Akita">秋田県</option>
+                    <option value="Yamagata">山形県</option>
+                    <option value="Fukushima">福島県</option>
+                    <option value="Ibaraki">茨城県</option>
+                    <option value="Tochigi">栃木県</option>
+                    <option value="Gunma">群馬県</option>
+                    <option value="Saitama">埼玉県</option>
+                    <option value="Chiba">千葉県</option>
+                    <option value="Tokyo">東京都</option>
+                    <option value="Kanagawa">神奈川県</option>
+                    <option value="Niigata">新潟県</option>
+                    <option value="Toyama">富山県</option>
+                    <option value="Ishikawa">石川県</option>
+                    <option value="Fukui">福井県</option>
+                    <option value="Yamanashi">山梨県</option>
+                    <option value="Nagano">長野県</option>
+                    <option value="Gifu">岐阜県</option>
+                    <option value="Shizuoka">静岡県</option>
+                    <option value="Aichi">愛知県</option>
+                    <option value="Mie">三重県</option>
+                    <option value="Shiga">滋賀県</option>
+                    <option value="Kyoto">京都府</option>
+                    <option value="Osaka">大阪府</option>
+                    <option value="Hyogo">兵庫県</option>
+                    <option value="Nara">奈良県</option>
+                    <option value="Wakayama">和歌山県</option>
+                    <option value="Tottori">鳥取県</option>
+                    <option value="Shimane">島根県</option>
+                    <option value="Okayama">岡山県</option>
+                    <option value="Hiroshima">広島県</option>
+                    <option value="Yamaguchi">山口県</option>
+                    <option value="Tokushima">徳島県</option>
+                    <option value="Kagawa">香川県</option>
+                    <option value="Ehime">愛媛県</option>
+                    <option value="Kochi">高知県</option>
+                    <option value="Fukuoka">福岡県</option>
+                    <option value="Saga">佐賀県</option>
+                    <option value="Nagasaki">長崎県</option>
+                    <option value="Kumamoto">熊本県</option>
+                    <option value="Oita">大分県</option>
+                    <option value="Miyazaki">宮崎県</option>
+                    <option value="Kagoshima">鹿児島県</option>
+                    <option value="Okinawa">沖縄県</option>
+                    <option value="Kaigai">海外</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="category">カテゴリー</label>
+                <select id="category" name="category">
+                    <option value="elder">高齢者向け</option>
+                    <option value="company">企業向け</option>
+                    <option value="normal">一般家庭向け</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="keyword">キーワード検索</label>
+                <input type="text" id="keyword" name="keyword" placeholder="キーワードを入力">
+            </div>
+            <button type="button" onclick="submitCriteria()">検索</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
+      </footer>
+    <script>
+        function applyFilters() {
+          const form = document.getElementById('filter-form');
+          const area = form.area.value;
+          const industry = form.industry.value;
+          const usage = form.usage.value;
+          const keyword = form.keyword.value;
+    
+          const queryString = `?area=${area}&industry=${industry}&usage=${usage}&keyword=${keyword}`;
+          window.location.href = `category.html${queryString}`;
+        }
+      </script>
+    <script src="criteria_script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
