@@ -52,6 +52,28 @@ main {
 .category-box h4 {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.category-item {
+    cursor: pointer;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #92b1ff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .back-button:hover {
+    background-color: rgb(179, 179, 179);
+  }
+
 footer {
     background: #333;
     color: white;

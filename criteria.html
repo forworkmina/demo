@@ -86,17 +86,14 @@
         <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
       </footer>
     <script>
-        function applyFilters() {
-          const form = document.getElementById('filter-form');
-          const area = form.area.value;
-          const industry = form.industry.value;
-          const usage = form.usage.value;
-          const keyword = form.keyword.value;
-    
-          const queryString = `?area=${area}&industry=${industry}&usage=${usage}&keyword=${keyword}`;
-          window.location.href = `category.html${queryString}`;
-        }
-      </script>
+    function submitCriteria() {
+        const area = document.getElementById('area').value;
+        const category = document.getElementById('category').value;
+        const keyword = document.getElementById('keyword').value;
+            
+        window.location.href = `category.html?area=${area}&category=${category}&keyword=${keyword}`;
+    }
+    </script>
     <script src="criteria_script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

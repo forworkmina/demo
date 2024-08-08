@@ -50,111 +50,142 @@
   </footer>
   
   <script>
-    const questions = {
-      'kaigo': [
-        'Q1: 負傷、疾病または身体上もしくは精神上の障害により、2週間以上にわたり常時介護（歩行、排泄、食事等の日常生活に必要な便宜を給与すること）を、介護するための休業ですか？',
-        'Q2: 対象家族は被保険者の、「配偶者（事実上婚姻関係と同様の事情にあるものを含む）」「父母（養父母を含む）」「子（養子を含む）」「配者の父母（養父母を含む）」「祖父母」「兄弟姉妹」「孫」ですか？',
-        'Q3: 被保険者が、その期間の初日および末日とする日を明らかにして事業主に申し出を行いましたか？',
-        'Q4: 3の申し出により被保険者が実際に取得した休業ですか？',
-        'Q5: 介護休業を開始した日より2年間は被保険者が12か月以上ですか？',
-        'Q6: 有期雇用労働者ですか？',
-        'Q7: 介護休業開始予定日から起算して93日を経過する日から6か月を経過する日までに、その労働契約（労働契約が更新される場合にあっては、更新後のもの）が満了することは明らかですか？'
-      ],
-      'sumai': [
-        'Q1: 住宅を取得し登記上の持分を保有するとともにその住宅に自分で居住しますか？',
-        'Q2: 収入が一定以下ですか？'
-      ],
-      'jutakuloan': [
-        'Q1: 住宅ローンの返済期間が「10年以上」ですか？',
-        'Q2: 自分自身で居住するための住宅ですか？',
-        'Q3: 床面積が「50平方メートル以上」ですか？',
-        'Q4: 自宅で事業を営んでいる場合、床面積の「2分の1以上」を居住のために使用しますか？',
-        'Q5: 合計所得金額が2,000万円以下」ですか？',
-        'Q6: 1982年1月1日以降に建築しましたか？',
-        'Q7: 現行の耐震基準に適合していますか？'
-      ],
-      'shussan': [
-        'Q1: 被保険者または家族（被扶養者）が、妊娠4か月（85日）以上で出産をしましたか？'
-      ],
-      'senior': [
-        'Q1: 新たに事業を始める方または事業開始後おおむね7年以内の方のうち、女性または35歳未満か55歳以上の方ですか？'
-      ],
-      'jutaku_repair': [
-        'Q1: 介護保険の要介護認定で要支援、もしくは要介護の認定を受けていますか？',
-        'Q2: 既に居宅介護住宅改修費の上限20万円分の工事を終えていませんか？'
-      ],
-      'kaigo_service': [
-        'Q1: 公的介護保険サービスの自己負担額が所得に応じて１～３割を超えていますか？',
-        'Q2: 申請する金額は住宅で暮らしながら受けられる「居宅サービス」施設に入居して受けられる「介護施設サービス」、住み慣れた地域で生活し続けることを目的とした「地域密着形サービス」を利用した際の利用者負担額ですか？'
-      ],
-      'nenkin_life': [
-        'Q1: 65再以上の老齢基礎年金の受給者ですか？',
-        'Q2: 同一生体の全員が市町村民非課税ですか？',
-        'Q3: 前年の公的年金等の収入額とそのほかの所得との合計が878,900円以下ですか？'
-      ],
-      'bgata': [
-        'Q1: B型肝炎ウイルスに現在感染している。または感染していたことがありますか。',
-        'Q2: 生年月日が昭和16年7月2日～昭和63年1月27日までの間ですか。',
-        'Q3: 幼少期に集団予防接種をされていましたか。'
-      ],
-      'sougou': [
-        'Q1: 新型コロナウイルスの影響を受けて、収入の減少や失業等により生活に困窮し、日常生活の維持が困難となっていますか？',
-      ]
-      // Add more categories and questions as needed
-    };
+let currentQuestionIndex = 0;
+  let questions = [];
 
-    document.addEventListener('DOMContentLoaded', function() {
-      updateCategoryInfo();
-      const urlParams = new URLSearchParams(window.location.search);
-      const category = urlParams.get('category');
-      const questionIndex = parseInt(urlParams.get('q'), 10);
-      if (category && questions[category] && questionIndex >= 0 && questionIndex < questions[category].length) {
-        loadQuestion(category, questionIndex);
-      } else {
-        document.getElementById('question-title').textContent = 'Invalid question or category.';
-      }
-    });
+  function getCategory() {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get('category');
+    console.log("Category:", category); // Debugging log
+    return category;
+  }
 
-    function loadQuestion(category, questionIndex) {
-      const questionTitle = document.getElementById('question-title');
+function loadQuestions(category) {
+  const categoryInfo = document.getElementById('category-info');
+  const questionTitle = document.getElementById('question-title');
+  
+  let title;
+  
+  switch (category) {
+    case 'kaigo':
+        title = '介護休業給付金';
+        questions = [
+            'Q1: 負傷、疾病または身体上もしくは精神上の障害により、2週間以上にわたり常時介護（歩行、排泄、食事等の日常生活に必要な便宜を給与すること）を、介護するための休業ですか？',
+            'Q2: 対象家族は被保険者の、「配偶者（事実上婚姻関係と同様の事情にあるものを含む）」「父母（養父母を含む）」「子（養子を含む）」「配者の父母（養父母を含む）」「祖父母」「兄弟姉妹」「孫」ですか？',
+            'Q3: 被保険者が、その期間の初日および末日とする日を明らかにして事業主に申し出を行いましたか？',
+            'Q4: 3の申し出により被保険者が実際に取得した休業ですか？',
+            'Q5: 介護休業を開始した日より2年間は被保険者が12か月以上ですか？',
+            'Q6: 有期雇用労働者ですか？',
+            'Q7: 介護休業開始予定日から起算して93日を経過する日から6か月を経過する日までに、その労働契約（労働契約が更新される場合にあっては、更新後のもの）が満了することは明らかですか？'
+        ];
+        break;
+    case 'sumai':
+        title = '住まい給付金';
+        questions = [
+            'Q1: 住宅を取得し登記上の持分を保有するとともにその住宅に自分で居住しますか？',
+            'Q2: 収入が一定以下ですか'
+        ];
+        break;
+    case 'jutaku_repair':
+        title = '高齢者住宅改修費補助金';
+        questions = [
+            'Q1: 介護保険の要介護認定で要支援、もしくは要介護の認定を受けていますか？',
+            'Q2: 既に居宅介護住宅改修費の上限20万円分の工事を終えていませんか？'
+        ];
+        break;
+    case 'senior':
+        title = 'シニア支援給付金';
+        questions = [
+            'Q1: 新たに事業を始める方または事業開始後おおむね7年以内の方のうち、女性または35歳未満か55歳以上の方ですか？'
+        ];
+        break;
+    case 'kaigo_service':
+        title = '介護サービス給付金';
+        questions = [
+            'Q1: 公的介護保険サービスの自己負担額が所得に応じて１～３割を超えていますか？',
+            'Q2: 申請する金額は住宅で暮らしながら受けられる「居宅サービス」施設に入居して受けられる「介護施設サービス」、住み慣れた地域で生活し続けることを目的とした「地域密着形サービス」を利用した際の利用者負担額ですか？'
+        ];
+        break;
+    case 'nenkin_life':
+        title = '年金生活者支援給付金';
+        questions = [
+            'Q1: 65再以上の老齢基礎年金の受給者ですか？',
+            'Q2: 同一生体の全員が市町村民非課税ですか？',
+            'Q3: 前年の公的年金等の収入額とそのほかの所得との合計が878,900円以下ですか？'
+        ];
+        break;
+    case 'jutakuloan':
+        title = '住宅ローン減税制度';
+        questions = [
+            'Q1: 住宅ローンの返済期間が「10年以上」ですか？',
+            'Q2: 自分自身で居住するための住宅ですか？',
+            'Q3: 床面積が「50平方メートル以上」ですか？',
+            'Q4: 自宅で事業を営んでいる場合、床面積の「2分の1以上」を居住のために使用しますか？',
+            'Q5: 合計所得金額が2,000万円以下」ですか？',
+            'Q6: 1982年1月1日以降に建築しましたか？',
+            'Q7: 現行の耐震基準に適合していますか？'
+        ];
+        break;
+    case 'shussan':
+        title = '出産育児一時金';
+        questions = [
+            'Q1: 被保険者または家族（被扶養者）が、妊娠4か月（85日）以上で出産をしましたか？'
+        ];
+        break;
+    case 'bgata':
+        title = 'B型肺炎給付金';
+        questions = [
+            'Q1: B型肝炎ウイルスに現在感染している。または感染していたことがありますか？',
+            'Q2: 生年月日が昭和16年7月2日～昭和63年1月27日までの間ですか？',
+            'Q3: 幼少期に集団予防接種をされていましたか？'
+        ];
+        break;
+    case 'sougou':
+        title = '総合給付金';
+        questions = [
+            'Q1: 新型コロナウイルスの影響を受けて、収入の減少や失業等により生活に困窮し、日常生活の維持が困難となっていますか？'
+        ];
+        break;
+    default:
+        title = 'エラー';
+        questions = ['もう一度やり直してください'];
+        break;
+}
+  
+  categoryInfo.textContent = title;
+  questionTitle.textContent = '質問';
+  showQuestion();
+}
+
+function showQuestion() {
       const questionContainer = document.getElementById('question-container');
-      questionTitle.textContent = `質問 ${questionIndex + 1}`;
-      questionContainer.textContent = questions[category][questionIndex];
-    }
-
-    function updateCategoryInfo() {
-      const categoryInfo = document.getElementById('category-info');
-      const categoryName = localStorage.getItem('categoryName');
-      if (categoryName) {
-        categoryInfo.textContent = `${categoryName}でお困りの方へ`;
-      }
-    }
-
-    function submitAnswer(answer) {
-      const urlParams = new URLSearchParams(window.location.search);
-      const category = urlParams.get('category');
-      const questionIndex = parseInt(urlParams.get('q'), 10);
-      const nextQuestionIndex = questionIndex + 1;
-
-      if (answer === 'いいえ') {
-        window.location.href = 'no_message.html';
+      if (currentQuestionIndex < questions.length) {
+        questionContainer.textContent = questions[currentQuestionIndex];
       } else {
-        if (nextQuestionIndex < questions[category].length) {
-          window.location.href = `question.html?category=${category}&q=${nextQuestionIndex}`;
-        } else {
-          window.location.href = 'yes_message.html';
-        }
+        // All questions answered
+        window.location.href = 'yes_message.html';
       }
     }
 
-    function toggleMenu() {
-      var x = document.querySelector(".topnav");
-      if (x.style.display === "block") {
-        x.style.display = "none";
+function submitAnswer(answer) {
+  if (answer === 'いいえ') {
+    window.location.href = 'no_message.html';
+  } else {
+    currentQuestionIndex++;
+    showQuestion();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+      const category = getCategory();
+      if (category) {
+        loadQuestions(category);
       } else {
-        x.style.display = "block";
+        console.error("No category specified in URL.");
       }
-    }
-  </script>
+});
+</script>
+
 </body>
 </html>
+

@@ -38,72 +38,102 @@
   <main>
     <section class="categories">
       <h2>支援金情報</h2>
+      <button class="back-button" onclick="location.href='criteria.html'">戻る</button>
       <ul id="categoryList">
         <!-- Example category items -->
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="介護休業給付金">
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="介護休業給付金" data-subcategory="kaigo">
           <div class="category-box">
             <h3>介護休業給付金</h3>
             <h4>全国対象　上限金額 約35万円</h4>
             <p>雇用保険の被保険者で一定の条件を満たす方が、職場復帰を前提として家族を介護するために介護休業を取得した場合に支給される給付金です。</p>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="住まい給付金">
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="住まい給付金" data-subcategory="sumai">
           <div class="category-box">
             <h3>住まい給付金</h3>
             <h4>全国対象　上限金額 約30万円</h4>
             <p>消費税率引上げによる住宅取得者の負担をかなりの程度緩和するために創設した制度です。</p>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="住宅省エネリノベーション促進事業費補助金">
+        <!-- <li class="category-item" data-area="all" data-category="elder" data-keywords="住宅省エネリノベーション促進事業費補助金" data-subcategory="jutaku_repair">
           <div class="category-box">
             <h3>住宅省エネリノベーション促進事業費補助金</h3>
             <h4>全国対象　上限金額 上限金額　約30万〜60万</h4>
             <p>住宅の省エネ化を図るリノベーションを促進するために、既築住宅の所有者等による高性能な断熱材や窓等を用いた断熱改修を支援すると共に、戸建住宅においては、この断熱改修と同時に行う高性能な家庭用設備（高効率給湯機等）の導入・改修支援を行う支援金です。</p>
           </div>
-        </li>
-        <!-- <li class="category-item" data-area="all" data-category="company" data-keywords="小規模事業者持続化補助金">
+        </li> -->
+        <!-- <li class="category-item" data-area="all" data-category="company" data-keywords="小規模事業者持続化補助金" data-subcategory="monodukuri">
           <div class="category-box">
             <h3>小規模事業者持続化補助金</h3>
-            <p>東京都対象　上限金額 約50万円</p>
+            <p>全国対象　上限金額 約50万円</p>
           </div>
-        </li>
-        <li class="category-item" data-area="all" data-category="normal" data-keywords="子育て支援金">
+        </li> -->
+        <!-- <li class="category-item" data-area="all" data-category="normal" data-keywords="子育て支援金" data-subcategory="">
           <div class="category-box">
             <h3>子育て支援金</h3>
-            <p>大阪府対象　上限金額 約10万円</p>
+            <p>全国対象　上限金額 約10万円</p>
           </div>
-        </li>
-        <li class="category-item" data-area="all" data-category="normal" data-keywords="住まいの給付金">
+        </li> -->
+        <!-- <li class="category-item" data-area="all" data-category="normal" data-keywords="住まいの給付金">
           <div class="category-box">
             <h3>住まいの給付金</h3>
-            <p>愛知県対象　上限金額 約20万円</p>
+            <p>全国対象　上限金額 約20万円</p>
           </div>
-        </li>
-        <li class="category-item" data-area="all" data-category="company" data-keywords="事業再構築補助金">
+        </li> -->
+        <!-- <li class="category-item" data-area="all" data-category="company" data-keywords="事業再構築補助金" data-subcategory="monodukuri">
           <div class="category-box">
             <h3>事業再構築補助金</h3>
-            <p>北海道対象　上限金額 約100万円</p>
+            <p>全国対象　上限金額 約100万円</p>
           </div>
-        </li>
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="高齢者住宅改修費補助金">
+        </li> -->
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="高齢者住宅改修費補助金" data-subcategory="jutaku_repair">
           <div class="category-box">
             <h3>高齢者住宅改修費補助金</h3>
-            <p>福岡県対象　上限金額 約25万円</p>
+            <p>全国対象　上限金額 約25万円</p>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="company" data-keywords="観光業支援金">
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="年金生活者支援給付金" data-subcategory="nenkin_life">
           <div class="category-box">
-            <h3>観光業支援金</h3>
-            <p>沖縄県対象　上限金額 約70万円</p>
+            <h3>年金生活者支援給付金</h3>
+            <p>全国対象　上限金額 約70万円</p>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="normal" data-keywords="教育支援金">
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="シニア支援給付金" data-subcategory="senior">
+          <div class="category-box">
+            <h3>シニア支援給付金</h3>
+            <p>全国対象　上限金額 約70万円</p>
+          </div>
+        </li>
+        <!-- <li class="category-item" data-area="all" data-category="normal" data-keywords="教育支援金" data-subcategory="education">
           <div class="category-box">
             <h3>教育支援金</h3>
-            <p>静岡県対象　上限金額 約15万円</p>
+            <p>全国対象　上限金額 約15万円</p>
+          </div>
+        </li> -->
+        <li class="category-item" data-area="all" data-category="normal" data-keywords="住宅ローン減税制度" data-subcategory="jutakuloan">
+          <div class="category-box">
+            <h3>住宅ローン減税制度</h3>
+            <p>全国対象　上限金額 約15万円</p>
           </div>
         </li>
-        Add more category items as needed -->
+        <li class="category-item" data-area="all" data-category="normal" data-keywords="出産育児一時金" data-subcategory="shussan">
+          <div class="category-box">
+            <h3>出産育児一時金</h3>
+            <p>全国対象　上限金額 約15万円</p>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="normal" data-keywords="B型肺炎給付金" data-subcategory="bgata">
+          <div class="category-box">
+            <h3>B型肺炎給付金</h3>
+            <p>全国対象　上限金額 約15万円</p>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="normal" data-keywords="総合給付金" data-subcategory="sougou">
+          <div class="category-box">
+            <h3>総合給付金</h3>
+            <p>全国対象　上限金額 約15万円</p>
+          </div>
+        </li>
       </ul>
     </section>
   </main>
@@ -113,12 +143,12 @@
   
   <script>
     function getQueryParams() {
-        const params = new URLSearchParams(window.location.search);
-        return {
-            area: params.get('area') || '',
-            industry: params.get('category') || '',
-            keyword: params.get('keyword') || ''
-        };
+      const params = new URLSearchParams(window.location.search);
+      return {
+        area: params.get('area') || '',
+        category: params.get('category') || '',
+        keyword: params.get('keyword') || ''
+      };
     }
 
     function filterCategories() {
@@ -132,7 +162,7 @@
 
             let matches = true;
 
-            if (area && itemArea !== area) {
+            if (area && area !== 'all' && itemArea !== area) {
                 matches = false;
             }
             if (category && itemCategory !== category) {
@@ -150,8 +180,22 @@
         });
     }
 
-    document.addEventListener('DOMContentLoaded', filterCategories);
+    function setupCategoryLinks() {
+        const categoryBoxes = document.querySelectorAll('.category-item');
+        categoryBoxes.forEach(box => {
+            box.addEventListener('click', function() {
+                const categoryName = this.dataset.subcategory;
+                window.location.href = `question.html?category=${categoryName}`;
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      filterCategories();
+      setupCategoryLinks();
+    });
   </script>
+
   
 </body>
 </html>

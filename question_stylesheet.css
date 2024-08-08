@@ -26,6 +26,11 @@ font-family:'M PLUS 1p', sans-serif;
 }
 .question-container {
 margin: 20px 0;
+
+}
+
+.question-container p{
+color: #333;
 }
 .answer-buttons {
 display: flex;
