@@ -17,6 +17,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0px;
+
 }
 
 .header-container {
@@ -24,16 +27,21 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .logo {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  font-size: 1em;
+  font-size: 1em; */
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .logo img {
-  height: 70px;
+  height: 150px;
 }
 
 .topnav {
@@ -42,9 +50,10 @@ header {
 }
 
 .topnav a {
-  color: black;
+  color: #333;
   text-decoration: none;
-  font-size: 16px;
+  margin-right: 20px;
+  font-weight: bold;
 }
 
 .social-media-icons {
@@ -66,42 +75,98 @@ header {
   margin: 4px 0;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 150px; /* Adjust this value to change the width of the white margin */
+  background-color: white;
+}
+
 .top-content {
   position: relative;
-  height: 90vh;
+  height: 88vh;
   background: url('background_img2.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  overflow: hidden;
-  margin: 40px;
-}
-
-.top-content .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /* padding: 20px; */
-  padding-bottom: 80px;
-  padding-left: 20px;
-  text-align: left;
-}
-
-.overlay_service {
-  position: absolute;
-  width: 70%;
-  height: 70%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  opacity: 0;
-  animation: fadeIn 1s forwards 1s; /* Text appears after 1 second */
-
+  /* overflow: hidden;
+  margin: 40px; */
 }
+
+.top-content .overlay{
+  width: 33%;
+  background-color: #001c4e; /* Solid navy color */
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5em;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+.contact .contact-button {
+  display: inline-block;
+  background-color: white;
+  color: #001c4e;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.overlay h1 {
+  width: 100%;
+  color: white;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 20px 0;
+}
+
+/* Description section */
+.second .image{
+  position: relative;
+  height: 70vh;
+  background: url('second.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.second .description{
+  display: flex;
+  justify-content: center; /* Center the content as a whole */
+  align-items: center; /* Vertically center the content */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.description .text-container {
+  display: flex; /* Align h1 and p side by side */
+  align-items: center; /* Vertical alignment of h1 and p */
+  gap: 70px; /* Space between h1 and p */
+}
+
+.description .text-container h1 {
+  font-size: 2.5vw; /* Responsive font size */
+  color: navy;
+}
+
+.description .text-container p {
+  font-size: 1.2vw; /* Responsive font size */
+  color: black;
+  margin: 0; /* Remove default margin */
+}
+
+.third {
+  background-color: #001c4e;
+  height: 70vh;
+}
+
+.third .text-container h1, h2{
+  color: #f9f9f9;
+}
+
+
+
 
 .top-content::after {
   content: '';
@@ -123,27 +188,17 @@ header {
   font-size: 3em;
   margin-bottom: 20px;
   animation: fadeInUp 4s forwards; /* Background overlay appears immediately */
-  color: black;
-  text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff;
-
-}
-
-p {
-  font-size: 1em;
   color: white;
+  /* text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff; */
+
 }
 
-h2 {
-  font-size: 2em;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 .top-content h3 {
   font-size: 1.5em;
   color: black;
   animation: fadeInUp 4s forwards; /* Background overlay appears immediately */
-  text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff;
+  /* text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff; */
 
 }
 
@@ -204,8 +259,8 @@ footer {
   background: #333;
   color: white;
   text-align: center;
-  padding: 1em;
-  position: fixed;
+  padding: 10px;
+  position:relative;
   bottom: 0;
   width: 100%;
   }
@@ -224,13 +279,7 @@ footer {
 
   .top-content h1 {
     font-size: 2em;
-    color: black; /* Change text color for smaller screens */
-    text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff;
-  }
-  .top-content h3 {
-    color: black; /* Change text color for smaller screens */
-    font-size: 1.3em;
-    text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff;
+    color: white; /* Change text color for smaller screens */
   }
 
   .yellow-rectangle h2 {
@@ -247,7 +296,7 @@ footer {
   }
 
   .top-content {
-    margin: 20px;
+    margin: 10px;
   }
 
   .service{
