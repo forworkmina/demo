@@ -130,6 +130,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
 }
 
 .second .description{
@@ -156,17 +157,169 @@ header {
   margin: 0; /* Remove default margin */
 }
 
+
 .third {
   background-color: #001c4e;
-  height: 70vh;
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.third .text-container h1, h2{
-  color: #f9f9f9;
+.third .service-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.third .text-container {
+  width: 70%;
+  padding: 20px;
+}
 
+.third .text-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
 
+.third .text-container h2 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.third .option {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.third .option a {
+  color: #001c4e;
+  background-color: #f9f9f9;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.third .option a:hover {
+  background-color: #d1e7ff;
+}
+
+.third .image {
+  width: 40%;
+  padding: 20px;
+}
+
+.third .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.fourth {
+  background: url('4.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%;  */
+  height: 100vh; /* Full viewport height */
+  padding: 0 5%; /* Adjust padding as needed, reduced to prevent overflow */
+  background-color: #005288; /* Adjusted to your screenshot's background color */
+}
+
+.fourth .mission, .fourth .vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the items vertically */
+  justify-content: center; /* Center align the items horizontally */
+  width: 50%; /* Each section takes half of the container's width */
+  color: white; /* Text color set to white */
+  text-align: center; /* Centers the text within the containers */
+}
+
+.fourth h2 {
+  font-size: 3rem; /* Larger font size for headings */
+  position: relative; /* Needed to position the pseudo-element */
+  padding-bottom: 30px; /* Space for the underline */
+}
+
+.fourth h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; /* Thickness of the line */
+  background-color: white; /* Color of the line */
+  width: 50%; /* Width of the line relative to the element */
+  margin: auto; /* Center the line horizontally */
+}
+
+.fourth p {
+  font-size: 1.5rem; /* Larger font size for paragraph */
+}
+
+.fourth h2, .fourth p {
+  font-family: 'M PLUS 1P', sans-serif;
+}
+
+.fifth {
+  background-color: white;
+  color: white;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  width: 100%;
+  height: 100vh;
+}
+
+.fifth .content {
+  display: flex; /* This will line up the children side by side */
+  width: 100%; /* Use the full width of the container */
+  justify-content: space-evenly; /* Evenly space the children horizontally */
+  align-items: center;
+  padding: 5%;
+}
+
+.fifth img {
+  width: 80%; /* Adjust the width to fit three images side by side */
+  padding: 10px; /* Maintain some space around the images */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.fifth .head {
+  background-color: #001c4e;
+  width: 100%;
+  padding: 10px;
+  padding-left: 50px;
+  font-size: 1rem;
+}
+
+.sixth {
+  background-color:#f9f9f9;
+  color: black;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .fourth {
+    flex-direction: column;
+  }
+
+  .fourth .mission, .fourth .vision {
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px; /* Add space between the sections on smaller screens */
+  }
+}
 
 .top-content::after {
   content: '';
