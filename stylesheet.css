@@ -83,7 +83,7 @@ header {
   background-color: white;
 }
 
-.top-content {
+/* .top-content {
   position: relative;
   height: 88vh;
   background: url('background_img2.jpg') no-repeat center center/cover;
@@ -92,26 +92,44 @@ header {
   align-items: center;
   /* overflow: hidden;
   margin: 40px; */
-}
+/* } */ 
 
 .top-content .overlay{
   width: 33%;
   background-color: #001c4e; /* Solid navy color */
-  padding: 10px;
+  padding: 8px;
   box-sizing: border-box;
   position: absolute;
-  bottom: 5em;
+  top: 10em;
   left: 0;
   right: 0;
   padding: 20px;
 }
+
+.top-content {
+  position: relative;
+  height: 88vh;
+  background: url('background_img2.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact {
+  position: absolute;
+  top: 25em; /* Adjusts the position of the button relative to the bottom */
+  left: 1.5em; /* Adjusts the position of the button relative to the right */
+}
+
 .contact .contact-button {
   display: inline-block;
   background-color: white;
   color: #001c4e;
   padding: 10px 20px;
   text-decoration: none;
-  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .overlay h1 {
@@ -121,6 +139,8 @@ header {
   margin: 0;
   padding: 20px 0;
 }
+
+
 
 /* Description section */
 .second .image{
@@ -302,13 +322,52 @@ header {
 }
 
 .sixth {
-  background-color:#f9f9f9;
+  background-color: #f9f9f9;
   color: black;
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100vh;
 }
+
+.sixth .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 10%;
+  box-sizing: border-box;
+}
+
+.sixth .head {
+  text-align: left;
+  flex: 1;
+  color: #004a98;
+  margin-top: 1.5em;
+}
+
+.sixth .details {
+  text-align: right;
+  flex: 1;
+}
+
+.sixth .details .label {
+  color: #004a98; /* Set the color of the labels to blue */
+}
+
+.sixth .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sixth .image img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+
 
 @media (max-width: 768px) {
   .fourth {
