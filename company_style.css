@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap');
+header {
+  background: white;
+  color: black;
+  padding: 0em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0px;
+  height: 5em;
+
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.logo img {
+  height: 100px;
+}
+
+.topnav {
+  display: flex;
+  gap: 3em;
+}
+
+.topnav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.menu-bar {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-bar .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
 .line {
     width: 25px;
     height: 3px;
@@ -5,12 +62,11 @@
     margin: 4px;
   }
 
-  
-  
+
   .company-top {
     position: relative;
     height: 45vh;
-    background: url('aboutus.png') no-repeat center center/cover;
+    background: url('company.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +85,7 @@
   .company-top .overlay h1 {
     font-family: Georgia, serif;
     font-size: 3em;
+    color: white;
   }
   
   .company-content {
@@ -37,35 +94,44 @@
     padding: 20px;
     background: #f4f4f4;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
     text-align: center;
+    background: url('companyback.png') no-repeat center center/cover;
+    max-width: 100%;
+  }
+
+  .company-content img{
+    width: 800px;
+    border-radius: 10px;
   }
   
-  .company-content h2 {
+  /* .company-content h2 {
     color: #333;
     margin-bottom: 20px;
     text-align: left;
   }
   
   .company-table {
-    width: 100%;
+    width: 60%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    align-items: center;
+    background-color: white;
   }
   
   .company-table th, .company-table td {
     padding: 20px; /* Increased padding */
-    text-align: left;
-  }
+    /* text-align: left;
+  } */
   
-  .company-table th {
+  /* .company-table th {
     background: #f4f4f4;
     width: 30%;
   }
   
   .company-table tr {
     border-bottom: 1px solid #5a5a5a;
-  }
+  } */ 
   
   footer {
     background: #333;

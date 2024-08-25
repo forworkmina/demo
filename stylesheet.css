@@ -83,17 +83,6 @@ header {
   background-color: white;
 }
 
-/* .top-content {
-  position: relative;
-  height: 88vh;
-  background: url('background_img2.jpg') no-repeat center center/cover;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  /* overflow: hidden;
-  margin: 40px; */
-/* } */ 
-
 .top-content .overlay{
   width: 33%;
   background-color: #001c4e; /* Solid navy color */
@@ -115,21 +104,29 @@ header {
   align-items: center;
 }
 
-.contact {
+.top-content .contact {
   position: absolute;
   top: 25em; /* Adjusts the position of the button relative to the bottom */
   left: 1.5em; /* Adjusts the position of the button relative to the right */
 }
 
-.contact .contact-button {
+.top-content .contact a {
+  color: #001c4e;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
   display: inline-block;
   background-color: white;
-  color: #001c4e;
-  padding: 10px 20px;
-  text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.top-content .contact a:hover {
+  background-color: #d1e7ff;
 }
 
 .overlay h1 {
@@ -141,76 +138,83 @@ header {
 }
 
 
+.second {
+  padding: 40px 0;
+  background-color: #f7faff;
+  height: 88vh;
+}
 
-/* Description section */
-.second .image{
-  position: relative;
-  height: 70vh;
-  background: url('second.png') no-repeat center center/cover;
+.second .title {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative; /* Add this for positioning the brackets */
+}
+
+.second .title img{
+  max-width: 70em;
+  height: auto;
+}
+
+.second .content {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 100px; /* Space between image and text */
 }
 
-.second .description{
-  display: flex;
-  justify-content: center; /* Center the content as a whole */
-  align-items: center; /* Vertically center the content */
+.second .image img {
+  max-width: 30em;
+  height: auto;
+}
+
+.second .description {
   padding: 20px;
-  background-color: #f9f9f9;
-}
-.description .text-container {
-  display: flex; /* Align h1 and p side by side */
-  align-items: center; /* Vertical alignment of h1 and p */
-  gap: 70px; /* Space between h1 and p */
+  position: relative;
+  max-width: 300px;
+  padding-right: 50px;
 }
 
-.description .text-container h1 {
-  font-size: 2.5vw; /* Responsive font size */
-  color: navy;
-}
-
-.description .text-container p {
-  font-size: 1.2vw; /* Responsive font size */
-  color: black;
-  margin: 0; /* Remove default margin */
+.second .description img{
+  max-width: 30em;
+  height: auto;
 }
 
 
 .third {
+  background-color: white;
+  padding: 30px 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 88vh;
+  align-items: center;
+}
+
+.third .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.third .title h1 {
+  font-size: 1.8em;
   background-color: #001c4e;
   color: white;
-  padding: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: inline-block;
 }
 
 .third .service-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .third .text-container {
-  width: 70%;
-  padding: 20px;
+  max-width: 700px;
 }
 
-.third .text-container h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.third .text-container h2 {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-}
 
 .third .option {
   display: flex;
@@ -219,27 +223,31 @@ header {
 }
 
 .third .option a {
-  color: #001c4e;
-  background-color: #f9f9f9;
-  padding: 15px;
-  text-decoration: none;
-  text-align: center;
+  font-size: 1.2em;
   font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  color: #001c4e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.third .option a span {
+  font-size: 1.5em;
+  color: #5c83c1;
+  margin-right: 15px;
 }
 
 .third .option a:hover {
-  background-color: #d1e7ff;
+  color: #5c83c1; /* Change text color on hover */
 }
 
 .third .image {
-  width: 40%;
-  padding: 20px;
+  max-width: 300px;
+  flex-shrink: 0;
 }
 
 .third .image img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -248,7 +256,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%;  */
   height: 100vh; /* Full viewport height */
   padding: 0 5%; /* Adjust padding as needed, reduced to prevent overflow */
   background-color: #005288; /* Adjusted to your screenshot's background color */
@@ -265,7 +272,7 @@ header {
 }
 
 .fourth h2 {
-  font-size: 3rem; /* Larger font size for headings */
+  font-size: 5rem; /* Larger font size for headings */
   position: relative; /* Needed to position the pseudo-element */
   padding-bottom: 30px; /* Space for the underline */
 }
@@ -283,7 +290,7 @@ header {
 }
 
 .fourth p {
-  font-size: 1.5rem; /* Larger font size for paragraph */
+  font-size: 1.8rem; /* Larger font size for paragraph */
 }
 
 .fourth h2, .fourth p {
@@ -295,7 +302,6 @@ header {
   color: white;
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
-  width: 100%;
   height: 100vh;
 }
 
@@ -328,7 +334,6 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
 }
 
 .sixth .content {

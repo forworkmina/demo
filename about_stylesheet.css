@@ -1,51 +1,60 @@
-/* body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
-  }
-  
-  .header-container .logo img {
-    height: 50px;
-  }
-  
-  .topnav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .topnav a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-  }
-  
-  .social-media-icons a {
-    color: white;
-    margin-left: 10px;
-  }
-  
-  .menu-bar {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .menu-bar .line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-  } */
-  
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap');
+header {
+  background: white;
+  color: black;
+  padding: 0em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0px;
+  height: 5em;
+
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.logo img {
+  height: 100px;
+}
+
+.topnav {
+  display: flex;
+  gap: 3em;
+}
+
+.topnav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.menu-bar {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-bar .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
  .about-section {
     position: relative;
     height: 45vh;
@@ -54,6 +63,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     overflow: hidden;
+    max-width: 100%;
 }
 
 .about-section .overlay {
@@ -71,43 +81,38 @@
 .about-section .overlay h1{
     font-family: Georgia, serif;
     font-size: 3em;
-}
-.about-section .overlay h3{
-  font-family: Georgia, serif;
-  font-size: 1.5em;
-}
-
-.about-section .overlay p{
-    font-family: system-ui;
+    color: white;
 }
 
 .about-content {
   max-width: 600px;
   padding: 20px;
-  /* background: #f4f4f4; */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
   text-align: center;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 100%;
   margin: auto;
-
+  background: url('aboutback.png') no-repeat center center/cover;
+  height: 80vh;
 }
 
-.about-content h2{
-    color:#333;
+.about-content .image img{
+  height: 200px;
 }
 
 .about-content h4{
   font-family: Georgia, serif;
+  font-size: 2em;
 }
 
 .about-content p{
     color:#333;
-    font-size: 16px;
-    font-family: Georgia, serif;
-}
+    font-size: 0.8em;
+    font-family: 'M PLUS 1P', sans-serif;
+    
+  }
 
 footer {
   background: #333;
