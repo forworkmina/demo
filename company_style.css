@@ -78,14 +78,19 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-bottom: 50px;
-    text-align: center;
+    padding-bottom: 10px; /* Adjust padding if necessary */
+    padding-left: 20px; /* Add padding to position the text more inward */
+    text-align: left;
   }
   
   .company-top .overlay h1 {
-    font-family: Georgia, serif;
-    font-size: 3em;
+    font-family: 'M PLUS Rounded 1c', sans-serif; /* Add this to import the font */
+    font-weight: 800; /* Equivalent to ExtraBold 800 */
     color: white;
+    font-size: 5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+
   }
   
   .company-content {
