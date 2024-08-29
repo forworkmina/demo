@@ -111,81 +111,105 @@
 
         case 'high-medical':
           imageSrc = 'high-medical.png';
-          linkHref = 'http://example.com/high-medical'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'high-medical-care':
           imageSrc = 'high-medical-care.png';
-          linkHref = 'http://example.com/high-medical-care'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'elderly-employment':
           imageSrc = 'elderly-employment.png';
-          linkHref = 'http://example.com/elderly-employment'; // Update with specific link
+          linkHref = ' https://www.mhlw.go.jp/kyujin/hwmap.html'; // Update with specific link
           break;
         case 're-employment':
           imageSrc = 're-employment.png';
-          linkHref = 'http://example.com/re-employment'; // Update with specific link
+          linkHref = 'https://www.hellowork.mhlw.go.jp/doc/saishuushokuteate.pdf'; // Update with specific link
           break;
         case 'care-robot':
           imageSrc = 'care-robot.png';
-          linkHref = 'http://example.com/care-robot'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'elderly-housing':
           imageSrc = 'elderly-housing.png';
-          linkHref = 'http://example.com/elderly-housing'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'old-age-pension':
           imageSrc = 'old-age-pension.png';
-          linkHref = 'http://example.com/old-age-pension'; // Update with specific link
+          linkHref = 'https://www.mhlw.go.jp/nenkinkyuufukin/system.html'; // Update with specific link
           break;
         case 'disability-pension':
           imageSrc = 'disability-pension.png';
-          linkHref = 'http://example.com/disability-pension'; // Update with specific link
+          linkHref = 'https://www.mhlw.go.jp/nenkinkyuufukin/system.html'; // Update with specific link
           break;
         case 'bereaved-pension':
           imageSrc = 'bereaved-pension.png';
-          linkHref = 'http://example.com/bereaved-pension'; // Update with specific link
+          linkHref = 'https://www.mhlw.go.jp/nenkinkyuufukin/system.html'; // Update with specific link
           break;
 
         case 'low-income-support-single':
           imageSrc = 'low-income-support-single.png';
-          linkHref = 'http://example.com/low-income-support-single'; // Update with specific link
+          linkHref = 'https://www.mhlw.go.jp/stf/newpage_32193.html'; // Update with specific link
           break;
         case 'low-income-support':
           imageSrc = 'low-income-support.png';
-          linkHref = 'http://example.com/low-income-support'; // Update with specific link
+          linkHref = 'https://www.mhlw.go.jp/stf/newpage_32193.html'; // Update with specific link
           break;
         case 'birth-support':
           imageSrc = 'birth-support.png';
-          linkHref = 'http://example.com/birth-support'; // Update with specific link
+          linkHref = 'https://www.mhlw.go.jp/content/11908000/001035057.pdf'; // Update with specific link
           break;
         case 'maternity-checkup':
           imageSrc = 'maternity-checkup.png';
-          linkHref = 'http://example.com/maternity-checkup'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'childbirth-lump-sum':
           imageSrc = 'childbirth-lump-sum.png';
-          linkHref = 'http://example.com/childbirth-lump-sum'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'childbirth-gift':
           imageSrc = 'childbirth-gift.png';
-          linkHref = 'http://example.com/childbirth-gift'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'childbirth-allowance':
           imageSrc = 'childbirth-allowance.png';
-          linkHref = 'http://example.com/childbirth-allowance'; // Update with specific link
+          linkHref = 'https://www.kyoukaikenpo.or.jp'; // Update with specific link
           break;
         case 'infertility-treatment':
           imageSrc = 'infertility-treatment.png';
-          linkHref = 'http://example.com/infertility-treatment'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'child-allowance':
           imageSrc = 'child-allowance.png';
-          linkHref = 'http://example.com/child-allowance'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
         case 'child-support-allowance':
           imageSrc = 'child-support-allowance.png';
-          linkHref = 'http://example.com/child-support-allowance'; // Update with specific link
+          linkHref = ''; // Update with specific link
           break;
+        case 'special-child-support':
+            imageSrc = 'special-child-support.png';
+            linkHref = ''; // Update with specific link
+            break;
+        case 'childcare-leave':
+            imageSrc = 'childcare-leave.png';
+            linkHref = ''; // Update with specific link
+            break;
+        case 'insurance-exemption':
+            imageSrc = 'insurance-exemption.png';
+            linkHref = 'https://www.nenkin.go.jp'; // Update with specific link
+            break;
+        case 'high-school-support':
+            imageSrc = 'high-school-support.png';
+            linkHref = ''; // Update with specific link
+            break;
+        case 'high-school-grant':
+            imageSrc = 'high-school-grant.png';
+            linkHref = ''; // Update with specific link
+            break;
+        case 'third-child-university':
+            imageSrc = 'third-child-university.png';
+            linkHref = 'https://www.jasso.go.jp'; // Update with specific link
+            break;
 
         default:
           imageSrc = 'error.png';
@@ -194,7 +218,14 @@
       }
 
       detailsImage.src = imageSrc;
-      websiteLink.href = linkHref;
+
+      // Show or hide the website link based on linkHref
+      if (linkHref) {
+        websiteLink.href = linkHref;
+        websiteLink.style.display = 'inline'; // Show the link
+      } else {
+        websiteLink.style.display = 'none'; // Hide the link
+      }
 
       contactButton.addEventListener('click', function() {
         window.location.href = 'contact.html';
