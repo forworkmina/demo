@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap');
+header {
+  background: white;
+  color: black;
+  padding: 0em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0px;
+  height: 5em;
+
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.logo img {
+  height: 100px;
+}
+
+.topnav {
+  display: flex;
+  gap: 3em;
+}
+
+.topnav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.menu-bar {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-bar .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white; /* Light grey background */
+}
+
+.details {
+    padding: 0px;
+    background: white;
+    max-width: 800px;
+    margin: 1px auto;
+    border-radius: 8px;
+    position: relative; /* Added for positioning */
+    align-items: center;
+  }
+  
+  .details-info {
+    position: relative; /* Added for positioning */
+  }
+  
+  .details-info img {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  
+  .details-info p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .details-info a.website-link {
+    position: absolute;
+    bottom: 15%; /* Adjust as needed */
+    right: 33%; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.7);
+    color: blue;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-button {
+    position: absolute;
+    bottom: 5%; /* Adjust as needed */
+    right: 33%; /* Adjust as needed */
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    background: lightgreen;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .contact-button:hover {
+    background: #575757;
+  }
+  .back-button {
+    position: absolute;
+    bottom: 5%; /* Adjust as needed */
+    right: 20%; /* Adjust as needed */
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    background: lightgray;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .contact-button:hover {
+    background: #575757;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }

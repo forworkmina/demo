@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>支援金情報 | 株式会社ネクストインパクト</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" type="text/css" href="category_stylesheet.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,161 +39,411 @@
       <h2>支援金情報</h2>
       <button class="back-button" onclick="location.href='criteria.html'">戻る</button>
       <ul id="categoryList">
-        <!-- Example category items -->
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="介護休業給付金" data-subcategory="kaigo">
+        <!-- 企業 -->
+        <li class="category-item" data-area="all" data-category="company" data-keywords="ものづくり補助金" data-subcategory="mono-zukuri">
           <div class="category-box">
-            <h3>介護休業給付金</h3>
-            <h4>全国対象　上限金額 約35万円</h4>
-            <p>雇用保険の被保険者で一定の条件を満たす方が、職場復帰を前提として家族を介護するために介護休業を取得した場合に支給される給付金です。</p>
+            <h3>ものづくり補助金</h3>
+            <span class="upper-limit">上限金額 約1000万円</span>
+            <p>製造業やサービス業などを対象とした設備投資のための補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="住まい給付金" data-subcategory="sumai">
+        <li class="category-item" data-area="all" data-category="company" data-keywords="IT導入補助金(通常枠)" data-subcategory="it-normal">
           <div class="category-box">
-            <h3>住まい給付金</h3>
-            <h4>全国対象　上限金額 約30万円</h4>
-            <p>消費税率引上げによる住宅取得者の負担をかなりの程度緩和するために創設した制度です。</p>
+            <h3>IT導入補助金(通常枠)</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>ITシステムの導入を支援するための補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-        <!-- <li class="category-item" data-area="all" data-category="elder" data-keywords="住宅省エネリノベーション促進事業費補助金" data-subcategory="jutaku_repair">
+        <li class="category-item" data-area="all" data-category="company" data-keywords="IT導入補助金(複数社連携IT導入枠)" data-subcategory="it-multiple">
           <div class="category-box">
-            <h3>住宅省エネリノベーション促進事業費補助金</h3>
-            <h4>全国対象　上限金額 上限金額　約30万〜60万</h4>
-            <p>住宅の省エネ化を図るリノベーションを促進するために、既築住宅の所有者等による高性能な断熱材や窓等を用いた断熱改修を支援すると共に、戸建住宅においては、この断熱改修と同時に行う高性能な家庭用設備（高効率給湯機等）の導入・改修支援を行う支援金です。</p>
-          </div>
-        </li> -->
-        <!-- <li class="category-item" data-area="all" data-category="company" data-keywords="小規模事業者持続化補助金" data-subcategory="monodukuri">
-          <div class="category-box">
-            <h3>小規模事業者持続化補助金</h3>
-            <p>全国対象　上限金額 約50万円</p>
-          </div>
-        </li> -->
-        <!-- <li class="category-item" data-area="all" data-category="normal" data-keywords="子育て支援金" data-subcategory="">
-          <div class="category-box">
-            <h3>子育て支援金</h3>
-            <p>全国対象　上限金額 約10万円</p>
-          </div>
-        </li> -->
-        <!-- <li class="category-item" data-area="all" data-category="normal" data-keywords="住まいの給付金">
-          <div class="category-box">
-            <h3>住まいの給付金</h3>
-            <p>全国対象　上限金額 約20万円</p>
-          </div>
-        </li> -->
-        <!-- <li class="category-item" data-area="all" data-category="company" data-keywords="事業再構築補助金" data-subcategory="monodukuri">
-          <div class="category-box">
-            <h3>事業再構築補助金</h3>
-            <p>全国対象　上限金額 約100万円</p>
-          </div>
-        </li> -->
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="高齢者住宅改修費補助金" data-subcategory="jutaku_repair">
-          <div class="category-box">
-            <h3>高齢者住宅改修費補助金</h3>
-            <p>全国対象　上限金額 約25万円</p>
+            <h3>IT導入補助金(複数社連携IT導入枠)</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>複数の企業が連携してITシステムを導入する際の補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="年金生活者支援給付金" data-subcategory="nenkin_life">
+        <li class="category-item" data-area="all" data-category="company" data-keywords="IT導入補助金インボイス枠(インボイス対応類型)" data-subcategory="it-invoice">
           <div class="category-box">
-            <h3>年金生活者支援給付金</h3>
-            <p>全国対象　上限金額 約70万円</p>
+            <h3>IT導入補助金インボイス枠(インボイス対応類型)</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>インボイス対応のITシステム導入を支援する補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="elder" data-keywords="シニア支援給付金" data-subcategory="senior">
+        <li class="category-item" data-area="all" data-category="company" data-keywords="IT導入補助金インボイス枠(電子取引類型)" data-subcategory="it-transaction">
           <div class="category-box">
-            <h3>シニア支援給付金</h3>
-            <p>全国対象　上限金額 約70万円</p>
+            <h3>IT導入補助金インボイス枠(電子取引類型)</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>電子取引対応のITシステム導入を支援する補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-        <!-- <li class="category-item" data-area="all" data-category="normal" data-keywords="教育支援金" data-subcategory="education">
+        <li class="category-item" data-area="all" data-category="company" data-keywords="IT導入補助金セキュリティ対策推進枠" data-subcategory="it-security">
           <div class="category-box">
-            <h3>教育支援金</h3>
-            <p>全国対象　上限金額 約15万円</p>
-          </div>
-        </li> -->
-        <li class="category-item" data-area="all" data-category="normal" data-keywords="住宅ローン減税制度" data-subcategory="jutakuloan">
-          <div class="category-box">
-            <h3>住宅ローン減税制度</h3>
-            <p>全国対象　上限金額 約15万円</p>
+            <h3>IT導入補助金セキュリティ対策推進枠</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>セキュリティ対策を推進するためのITシステム導入補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="normal" data-keywords="出産育児一時金" data-subcategory="shussan">
+        <li class="category-item" data-area="all" data-category="company" data-keywords="省エネルギー投資促進・需要構造転換支援事業費補助金(工場事業場型)" data-subcategory="energy-factory">
+          <div class="category-box">
+            <h3>省エネルギー投資促進・需要構造転換支援事業費補助金(工場事業場型)</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>工場や事業場の省エネルギー投資を支援する補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="company" data-keywords="省エネルギー投資促進・需要構造転換支援事業費補助金(電化・脱炭素燃転型)" data-subcategory="energy-electrification">
+          <div class="category-box">
+            <h3>省エネルギー投資促進・需要構造転換支援事業費補助金(電化・脱炭素燃転型)</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>電化や脱炭素燃料への転換を支援する補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="company" data-keywords="省エネルギー投資促進・需要構造転換支援事業費補助金(エネルギー需要最適化型)" data-subcategory="energy-optimization">
+          <div class="category-box">
+            <h3>省エネルギー投資促進・需要構造転換支援事業費補助金(エネルギー需要最適化型)</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>エネルギー需要の最適化を支援する補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="company" data-keywords="事業承継・引き継ぎ補助金" data-subcategory="business-succession">
+          <div class="category-box">
+            <h3>事業承継・引き継ぎ補助金</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>事業承継や引き継ぎを支援するための補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="company" data-keywords="事業再構築補助金・成長分野進出枠(通常類型)" data-subcategory="business-reconstruction">
+          <div class="category-box">
+            <h3>事業再構築補助金・成長分野進出枠(通常類型)</h3>
+            <span class="upper-limit">上限金額 未定</span>
+            <p>成長分野への進出を支援する事業再構築補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <!-- 高齢者 -->
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="高額介護サービス費" data-subcategory="high-medical">
+          <div class="category-box">
+            <h3>高額介護サービス費</h3>
+            <span class="upper-limit">上限金額 約20万円</span>
+            <p>介護サービスの費用が高額になった場合に支給される補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="高額医療・高額介護合算療養費" data-subcategory="high-medical-care">
+          <div class="category-box">
+            <h3>高額医療・高額介護合算療養費</h3>
+            <span class="upper-limit">上限金額 約30万円</span>
+            <p>医療費と介護費が合算されて高額になった場合に支給される補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="高年齢雇用継続基本給付金・高年齢再就職給付金" data-subcategory="elderly-employment">
+          <div class="category-box">
+            <h3>高年齢雇用継続基本給付金・高年齢再就職給付金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>高年齢者の継続雇用や再就職を支援するための給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="再就職手当" data-subcategory="re-employment">
+          <div class="category-box">
+            <h3>再就職手当</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>失業給付の受給資格者が早期に再就職した場合に支給される手当です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="介護ロボット導入活用支援事業補助金" data-subcategory="care-robot">
+          <div class="category-box">
+            <h3>介護ロボット導入活用支援事業補助金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>介護施設等における介護ロボットの導入を支援する補助金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="高齢者住宅改修費用助成制度" data-subcategory="elderly-housing">
+          <div class="category-box">
+            <h3>高齢者住宅改修費用助成制度</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>高齢者の住宅改修費用を助成する制度です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="老齢年金生活支援給付金" data-subcategory="old-age-pension">
+          <div class="category-box">
+            <h3>老齢年金生活支援給付金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>低所得の高齢者に対して支給される給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="障害年金生活者支援給付金" data-subcategory="disability-pension">
+          <div class="category-box">
+            <h3>障害年金生活者支援給付金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>低所得の障害年金受給者に対して支給される給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="elder" data-keywords="遺族年金生活者支援給付金" data-subcategory="bereaved-pension">
+          <div class="category-box">
+            <h3>遺族年金生活者支援給付金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>低所得の遺族年金受給者に対して支給される給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+    
+        <!-- 子育て -->
+        <li class="category-item" data-area="all" data-category="child" data-keywords="低所得の子育てに対する子育て世帯生活支援特別給付金(ひとり親世帯分)" data-subcategory="low-income-support-single">
+          <div class="category-box">
+            <h3>低所得の子育てに対する子育て世帯生活支援特別給付金(ひとり親世帯分)</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>低所得のひとり親世帯に対して支給される特別給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="低所得の子育てに対する子育て世帯生活支援特別給付金(ひとり親世帯分以外)" data-subcategory="low-income-support">
+          <div class="category-box">
+            <h3>低所得の子育てに対する子育て世帯生活支援特別給付金(ひとり親世帯分以外)</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>低所得の子育て世帯（ひとり親世帯以外）に対して支給される特別給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="出産・子育て応援給付金" data-subcategory="birth-support">
+          <div class="category-box">
+            <h3>出産・子育て応援給付金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>妊娠期から子育て期にかけて支給される給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="妊婦健診費用の助成" data-subcategory="maternity-checkup">
+          <div class="category-box">
+            <h3>妊婦健診費用の助成</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>妊婦健康診査の費用を助成する制度です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="出産育児一時金" data-subcategory="childbirth-lump-sum">
           <div class="category-box">
             <h3>出産育児一時金</h3>
-            <p>全国対象　上限金額 約15万円</p>
+            <span class="upper-limit">上限金額 42万円</span>
+            <p>出産にかかる費用を補助するための一時金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="normal" data-keywords="B型肺炎給付金" data-subcategory="bgata">
+        <li class="category-item" data-area="all" data-category="child" data-keywords="出産祝い金" data-subcategory="childbirth-gift">
           <div class="category-box">
-            <h3>B型肺炎給付金</h3>
-            <p>全国対象　上限金額 約15万円</p>
+            <h3>出産祝い金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>自治体によって支給される出産を祝う給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-        <li class="category-item" data-area="all" data-category="normal" data-keywords="総合給付金" data-subcategory="sougou">
+        <li class="category-item" data-area="all" data-category="child" data-keywords="出産手当金" data-subcategory="childbirth-allowance">
           <div class="category-box">
-            <h3>総合給付金</h3>
-            <p>全国対象　上限金額 約15万円</p>
+            <h3>出産手当金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>出産のため会社を休む期間中の所得を補償する手当金です。</p>
+            <button class="details-button">詳細はこちら</button>
           </div>
         </li>
-      </ul>
-    </section>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="特定不妊治療費助成事業" data-subcategory="infertility-treatment">
+          <div class="category-box">
+            <h3>特定不妊治療費助成事業</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>特定不妊治療（体外受精・顕微授精）にかかる費用を助成する制度です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="児童手当" data-subcategory="child-allowance">
+          <div class="category-box">
+            <h3>児童手当</h3>
+            <span class="upper-limit">月額 約1.5万円</span>
+            <p>子供を持つ家庭に支給される手当です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="児童扶養手当・児童育成手当" data-subcategory="child-support-allowance">
+          <div class="category-box">
+            <h3>児童扶養手当・児童育成手当</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>ひとり親家庭等に支給される手当です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="特別児童扶養手当・障害児福祉手当" data-subcategory="special-child-support">
+          <div class="category-box">
+            <h3>特別児童扶養手当・障害児福祉手当</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>障害のある子供を養育する家庭に支給される手当です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="育児休業給付金" data-subcategory="childcare-leave">
+          <div class="category-box">
+            <h3>育児休業給付金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>育児休業中の所得を補償する給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="育児育休期間中の社会保険料免除" data-subcategory="insurance-exemption">
+          <div class="category-box">
+            <h3>育児育休期間中の社会保険料免除</h3>
+            <span class="upper-limit">上限金額 なし</span>
+            <p>育児休業期間中の社会保険料が免除される制度です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="高等学校就学支援金" data-subcategory="high-school-support">
+          <div class="category-box">
+            <h3>高等学校就学支援金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>高等学校に通う生徒を対象とした学費の支援金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="高等生等就学給付金" data-subcategory="high-school-grant">
+          <div class="category-box">
+            <h3>高等生等就学給付金</h3>
+            <span class="upper-limit">上限金額 変動</span>
+            <p>高等学校生徒に対する就学支援のための給付金です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
+        <li class="category-item" data-area="all" data-category="child" data-keywords="第三子以上大学無償化" data-subcategory="third-child-university">
+          <div class="category-box">
+            <h3>第三子以上大学無償化</h3>
+            <span class="upper-limit">上限金額 なし</span>
+            <p>第三子以降の大学進学に対する学費無償化制度です。</p>
+            <button class="details-button">詳細はこちら</button>
+          </div>
+        </li>
   </main>
   <footer>
     <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
   </footer>
   
   <script>
-    function getQueryParams() {
-      const params = new URLSearchParams(window.location.search);
-      return {
-        area: params.get('area') || '',
-        category: params.get('category') || '',
-        keyword: params.get('keyword') || ''
-      };
-    }
+  //   function getQueryParams() {
+  //     const params = new URLSearchParams(window.location.search);
+  //     return {
+  //       area: params.get('area') || '',
+  //       category: params.get('category') || '',
+  //       keyword: params.get('keyword') || ''
+  //     };
+  //   }
 
-    function filterCategories() {
-        const { area, category, keyword } = getQueryParams();
-        const categories = document.querySelectorAll('.category-item');
+  //   function filterCategories() {
+  //       const { area, category, keyword } = getQueryParams();
+  //       const categories = document.querySelectorAll('.category-item');
 
-        categories.forEach(categoryItem => {
-            const itemArea = categoryItem.dataset.area;
-            const itemCategory = categoryItem.dataset.category;
-            const itemKeywords = categoryItem.dataset.keywords;
+  //       categories.forEach(categoryItem => {
+  //           const itemArea = categoryItem.dataset.area;
+  //           const itemCategory = categoryItem.dataset.category;
+  //           const itemKeywords = categoryItem.dataset.keywords;
 
-            let matches = true;
+  //           let matches = true;
 
-            if (area && area !== 'all' && itemArea !== area) {
-                matches = false;
-            }
-            if (category && itemCategory !== category) {
-                matches = false;
-            }
-            if (keyword && !itemKeywords.includes(keyword)) {
-                matches = false;
-            }
+  //           if (area && area !== 'all' && itemArea !== area) {
+  //               matches = false;
+  //           }
+  //           if (category && itemCategory !== category) {
+  //               matches = false;
+  //           }
+  //           if (keyword && !itemKeywords.includes(keyword)) {
+  //               matches = false;
+  //           }
 
-            if (matches) {
-                categoryItem.style.display = 'block';
-            } else {
-                categoryItem.style.display = 'none';
-            }
-        });
-    }
+  //           if (matches) {
+  //               categoryItem.style.display = 'block';
+  //           } else {
+  //               categoryItem.style.display = 'none';
+  //           }
+  //       });
+  //   }
 
-    function setupCategoryLinks() {
-        const categoryBoxes = document.querySelectorAll('.category-item');
-        categoryBoxes.forEach(box => {
-            box.addEventListener('click', function() {
-                const categoryName = this.dataset.subcategory;
-                window.location.href = `question.html?category=${categoryName}`;
-            });
-        });
-    }
+  //   function setupCategoryLinks() {
+  //       const categoryBoxes = document.querySelectorAll('.category-item');
+  //       categoryBoxes.forEach(box => {
+  //           box.addEventListener('click', function() {
+  //               const categoryName = this.dataset.subcategory;
+  //               window.location.href = `details.html?category=${categoryName}`;
+  //           });
+  //       });
+  //   }
 
-    document.addEventListener('DOMContentLoaded', function() {
-      filterCategories();
-      setupCategoryLinks();
+  //   document.addEventListener('DOMContentLoaded', function() {
+  //     filterCategories();
+  //     setupCategoryLinks();
+  //   });
+  // 
+  function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      area: params.get('area') || '',
+      category: params.get('category') || '',
+      keyword: params.get('keyword') || ''
+    };
+  }
+
+  function filterCategories() {
+    const { area, category, keyword } = getQueryParams();
+    const categories = document.querySelectorAll('.category-item');
+
+    categories.forEach(categoryItem => {
+      const itemArea = categoryItem.dataset.area;
+      const itemCategory = categoryItem.dataset.category;
+      const itemKeywords = categoryItem.dataset.keywords;
+
+      let matches = true;
+
+      if (area && area !== 'all' && itemArea !== area) {
+        matches = false;
+      }
+      if (category && itemCategory !== category) {
+        matches = false;
+      }
+      if (keyword && !itemKeywords.includes(keyword)) {
+        matches = false;
+      }
+
+      if (matches) {
+        categoryItem.style.display = 'block';
+      } else {
+        categoryItem.style.display = 'none';
+      }
     });
-  </script>
+  }
+
+  function setupCategoryLinks() {
+    const detailsButtons = document.querySelectorAll('.category-item .details-button');
+    detailsButtons.forEach(button => {
+      button.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevents event bubbling to the category item
+        const categoryName = this.closest('.category-item').dataset.subcategory;
+        window.location.href = `details.html?category=${categoryName}`;
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    filterCategories();
+    setupCategoryLinks();
+  });
+</script>
 
   
 </body>

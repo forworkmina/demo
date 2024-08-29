@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>株式会社ネクストインパクト</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="details_style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a class="logo" href="index.html">
+        <img alt="Logo" src="logo.png">
+      </a>
+      <nav class="topnav">
+        <a href="index.html">ホーム</a>
+        <a href="aboutus.html">NEXTIMPACTについて</a>
+        <a href="company.html">会社概要</a>
+        <a href="business.html">事業内容</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+      <div class="social-media-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="menu-bar" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="details">
+      <div id="details-info" class="details-info">
+        <a id="website-link" class="website-link" target="_blank">ウエブサイトへ飛ぶ</a>
+        <img id="details-image" alt="Details Image">
+        <button id="contact-button" class="contact-button">申請代行をお願いしたい</button>
+        <button class="back-button" onclick="location.href='category.html'"">戻る</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function getCategory() {
+      const params = new URLSearchParams(window.location.search);
+      const category = params.get('category');
+      console.log("Category:", category); // Debugging log
+      return category;
+    }
+
+    function loadDetails(category) {
+      const detailsImage = document.getElementById('details-image');
+      const websiteLink = document.getElementById('website-link');
+      const contactButton = document.getElementById('contact-button');
+
+      let imageSrc, linkHref;
+
+      switch (category) {
+        case 'mono-zukuri':
+          imageSrc = 'mono-zukuri.png';
+          linkHref = 'https://portal.monodukuri-hojo.jp/about.html'; // Update with specific link
+          break;
+        case 'it-normal':
+          imageSrc = 'it-normal.png';
+          linkHref = 'https://it-shien.smrj.go.jp/download#basic'; // Update with specific link
+          break;
+        case 'it-multiple':
+          imageSrc = 'it-multiple.png';
+          linkHref = 'https://it-shien.smrj.go.jp/download#basic'; // Update with specific link
+          break;
+        case 'it-invoice':
+          imageSrc = 'it-invoice.png';
+          linkHref = 'https://it-shien.smrj.go.jp/download#basic'; // Update with specific link
+          break;
+        case 'it-transaction':
+          imageSrc = 'it-transaction.png';
+          linkHref = 'https://it-shien.smrj.go.jp/download#basic'; // Update with specific link
+          break;
+        case 'it-security':
+          imageSrc = 'it-security.png';
+          linkHref = 'https://it-shien.smrj.go.jp/download#basic'; // Update with specific link
+          break;
+        case 'energy-factory':
+          imageSrc = 'energy-factory.png';
+          linkHref = 'https://syouenehojyokin.sii.or.jp/124business/index.html'; // Update with specific link
+          break;
+        case 'energy-electrification':
+          imageSrc = 'energy-electrification.png';
+          linkHref = 'https://syouenehojyokin.sii.or.jp/124business/index.html'; // Update with specific link
+          break;
+        case 'energy-optimization':
+          imageSrc = 'energy-optimization.png';
+          linkHref = 'https://syouenehojyokin.sii.or.jp/124business/index.html'; // Update with specific link
+          break;
+        case 'business-succession':
+          imageSrc = 'business-succession.png';
+          linkHref = 'https://jsh.go.jp/r5h/challenge/'; // Update with specific link
+          break;
+        case 'business-reconstruction':
+          imageSrc = 'business-reconstruction.png';
+          linkHref = 'https://jigyou-saikouchiku.go.jp/schedule.html#koubo10'; // Update with specific link
+          break;
+
+        case 'high-medical':
+          imageSrc = 'high-medical.png';
+          linkHref = 'http://example.com/high-medical'; // Update with specific link
+          break;
+        case 'high-medical-care':
+          imageSrc = 'high-medical-care.png';
+          linkHref = 'http://example.com/high-medical-care'; // Update with specific link
+          break;
+        case 'elderly-employment':
+          imageSrc = 'elderly-employment.png';
+          linkHref = 'http://example.com/elderly-employment'; // Update with specific link
+          break;
+        case 're-employment':
+          imageSrc = 're-employment.png';
+          linkHref = 'http://example.com/re-employment'; // Update with specific link
+          break;
+        case 'care-robot':
+          imageSrc = 'care-robot.png';
+          linkHref = 'http://example.com/care-robot'; // Update with specific link
+          break;
+        case 'elderly-housing':
+          imageSrc = 'elderly-housing.png';
+          linkHref = 'http://example.com/elderly-housing'; // Update with specific link
+          break;
+        case 'old-age-pension':
+          imageSrc = 'old-age-pension.png';
+          linkHref = 'http://example.com/old-age-pension'; // Update with specific link
+          break;
+        case 'disability-pension':
+          imageSrc = 'disability-pension.png';
+          linkHref = 'http://example.com/disability-pension'; // Update with specific link
+          break;
+        case 'bereaved-pension':
+          imageSrc = 'bereaved-pension.png';
+          linkHref = 'http://example.com/bereaved-pension'; // Update with specific link
+          break;
+
+        case 'low-income-support-single':
+          imageSrc = 'low-income-support-single.png';
+          linkHref = 'http://example.com/low-income-support-single'; // Update with specific link
+          break;
+        case 'low-income-support':
+          imageSrc = 'low-income-support.png';
+          linkHref = 'http://example.com/low-income-support'; // Update with specific link
+          break;
+        case 'birth-support':
+          imageSrc = 'birth-support.png';
+          linkHref = 'http://example.com/birth-support'; // Update with specific link
+          break;
+        case 'maternity-checkup':
+          imageSrc = 'maternity-checkup.png';
+          linkHref = 'http://example.com/maternity-checkup'; // Update with specific link
+          break;
+        case 'childbirth-lump-sum':
+          imageSrc = 'childbirth-lump-sum.png';
+          linkHref = 'http://example.com/childbirth-lump-sum'; // Update with specific link
+          break;
+        case 'childbirth-gift':
+          imageSrc = 'childbirth-gift.png';
+          linkHref = 'http://example.com/childbirth-gift'; // Update with specific link
+          break;
+        case 'childbirth-allowance':
+          imageSrc = 'childbirth-allowance.png';
+          linkHref = 'http://example.com/childbirth-allowance'; // Update with specific link
+          break;
+        case 'infertility-treatment':
+          imageSrc = 'infertility-treatment.png';
+          linkHref = 'http://example.com/infertility-treatment'; // Update with specific link
+          break;
+        case 'child-allowance':
+          imageSrc = 'child-allowance.png';
+          linkHref = 'http://example.com/child-allowance'; // Update with specific link
+          break;
+        case 'child-support-allowance':
+          imageSrc = 'child-support-allowance.png';
+          linkHref = 'http://example.com/child-support-allowance'; // Update with specific link
+          break;
+
+        default:
+          imageSrc = 'error.png';
+          linkHref = 'http://example.com/error'; // Default link for errors
+          break;
+      }
+
+      detailsImage.src = imageSrc;
+      websiteLink.href = linkHref;
+
+      contactButton.addEventListener('click', function() {
+        window.location.href = 'contact.html';
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const category = getCategory();
+      if (category) {
+        loadDetails(category);
+      } else {
+        console.error("No category specified in URL.");
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="questionnaire">
+            <div class="question">
+                <h2>Q1, まずは従業員様の人数を教えてください。</h2>
+                <div class="option">
+                    <span>(1) 常用労働者は1,000人以上ですか？</span>
+                    <label class="switch">
+                        <input type="checkbox" name="q1_1">
+                        <span class="slider"></span>
+                        <span class="text">NO</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <span>(2) 常用労働者は100～999人ですか？</span>
+                    <label class="switch">
+                        <input type="checkbox" name="q1_2">
+                        <span class="slider"></span>
+                        <span class="text">NO</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <span>(3) 常用労働者は10～99人以上ですか？</span>
+                    <label class="switch">
+                        <input type="checkbox" name="q1_3">
+                        <span class="slider"></span>
+                        <span class="text">NO</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <span>(4) 個人事業主ですか？</span>
+                    <label class="switch">
+                        <input type="checkbox" name="q1_4">
+                        <span class="slider"></span>
+                        <span class="text">NO</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h2>Q2, 興味・関心のある項目を選択してください。</h2>
+                <div class="option">
+                    <span>(1) 会社の生産工場の為に補助金を活用したい。</span>
+                    <label class="switch">
+                        <input type="checkbox" name="q2_1">
+                        <span class="slider"></span>
+                        <span class="text">NO</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <span>(2) 会社のIT対応が支えていない為補助金を再構築や新商品市場発展を検討している。</span>
+                    <label class="switch">
+                        <input type="checkbox" name="q2_2">
+                        <span class="slider"></span>
+                        <span class="text">NO</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <span>(3) 新型コロナウイルスの影響による業務再構築など再構築に補助金を活用したい。</span>
+                    <label class="switch">
+                        <input type="checkbox" name="q2_3">
+                        <span class="slider"></span>
+                        <span class="text">NO</span>
+                    </label>
+                </div>
+                <!-- Add more options as needed... -->
+            </div>
+
+            <button type="button" id="submit-button">無料で診断する</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

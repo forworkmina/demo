@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
   <title>補助金・助成金を探す | 株式会社ネクストインパクト</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" type="text/css" href="criteria.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <header>
+        <div class="header-container">
+          <a class="logo" href="index.html">
+            <img alt="Logo" src="logo.png">
+          </a>
+          <nav class="topnav">
+            <a href="index.html">ホーム</a>
+            <a href="aboutus.html">NEXTIMPACTについて</a>
+            <!-- <a href="#services">サービス</a> -->
+            <a href="company.html">会社概要</a>
+            <a href="business.html">事業内容</a>
+            <a href="contact.html">お問い合わせ</a>
+          </nav>
+          <div class="social-media-icons">
+            <a href="#"><i class="fa fa-facebook-f"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="menu-bar" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </header>
     <div class="container">
         <h1>補助金・助成金を探す</h1>
         <form id="criteriaForm">
@@ -71,7 +95,7 @@
                 <select id="category" name="category">
                     <option value="elder">高齢者向け</option>
                     <option value="company">企業向け</option>
-                    <option value="normal">一般家庭向け</option>
+                    <option value="child">子育て</option>
                     <!-- Add more options as needed -->
                 </select>
             </div>

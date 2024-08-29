@@ -1,31 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap');
+header {
+  background: white;
+  color: black;
+  padding: 0em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0px;
+  height: 5em;
+
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.logo img {
+  height: 100px;
+}
+
+.topnav {
+  display: flex;
+  gap: 3em;
+}
+
+.topnav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.menu-bar {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-bar .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
     margin: 0;
+    background-color: #f7f7f7; /* Light grey background */
 }
+
 main {
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Adding margin to the main page */
+    padding: 20px;
 }
-
 
 .categories {
     width: 100%;
     max-width: 800px;
 }
+
 .categories h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .categories ul {
-    list-style-type: none; /* Remove the dots from the list */
+    list-style-type: none;
     padding: 0;
 }
+
 .category-button {
     display: block;
     width: 100%;
@@ -36,21 +96,61 @@ main {
     cursor: pointer;
     text-align: left;
 }
+
 .category-box {
-    background: #83bdf8;
+    background: #ffffff; /* White background for the boxes */
     padding: 15px;
-    border-radius: 10px; /* Rounded edges for category boxes */
+    border-radius: 10px; /* Rounded edges */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s;
+    border: 1px solid #ccc; /* Light grey border */
+    transition: background-color 0.2s, box-shadow 0.2s;
+    position: relative; /* To position the button correctly */
 }
+
 .category-box:hover {
-    background-color: #e0e0e0;
+    background-color: #f5f5f5; /* Light grey background on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
+
 .category-box h3 {
     margin: 0;
+    font-size: 1.2em;
+    color: #333; /* Darker font color */
 }
+
 .category-box h4 {
     font-family: Arial, Helvetica, sans-serif;
+    color: #666; /* Slightly lighter color for the subtext */
+}
+
+.upper-limit {
+    display: inline-block;
+    background-color: #9bb3c8; /* Light green background */
+    color: #0c2f50; /* Dark green text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 1.2em; /* Slightly larger font size */
+}
+
+.details-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    background-color: #004a98; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #0c2f50; 
 }
 
 .category-item {
@@ -61,18 +161,19 @@ main {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #92b1ff;
-    color: black;
+    background-color: #004a98;
+    color: white;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  .back-button:hover {
+}
+
+.back-button:hover {
     background-color: rgb(179, 179, 179);
-  }
+}
 
 footer {
     background: #333;
@@ -87,16 +188,16 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .topnav {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .menu-bar {
-      display: flex;
+        display: none;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .categories h2{
-      font-size: 1.2em;
+    .menu-bar {
+        display: flex;
     }
-  }
+
+    .categories h2 {
+        font-size: 1.2em;
+    }
+}
