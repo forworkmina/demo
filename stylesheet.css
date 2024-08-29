@@ -1,4 +1,12 @@
 #stylesheet
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+main{
+  flex: 1 0 auto; /* Flex-grow to take up space and push footer down */
+}
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif; /* Add this to import the font */
   margin: 0;
@@ -19,6 +27,7 @@ header {
   align-items: center;
   border-bottom: 1px solid #ddd;
   margin-top: 0px;
+  max-width: 100%;
 
 }
 
@@ -26,7 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -47,6 +56,7 @@ header {
 .topnav {
   display: flex;
   gap: 3em;
+  max-width: 100%;
 }
 
 .topnav a {
@@ -90,9 +100,10 @@ header {
   box-sizing: border-box;
   position: absolute;
   top: 10em;
-  left: 0;
+  left: 0em;
   right: 0;
   padding: 15px;
+  z-index: 1;
 }
 
 .top-content {
@@ -106,8 +117,8 @@ header {
 
 .contact {
   position: absolute;
-  top: 30em; /* Adjusts the position of the button relative to the top */
-  left: 1.5em; /* Adjusts the position of the button relative to the left */
+  top: 27em; /* Adjusts the position of the button relative to the top */
+  left: 3em; /* Adjusts the position of the button relative to the left */
   color: #001c4e;
   padding: 15px;
   text-decoration: none;
@@ -118,7 +129,7 @@ header {
   display: inline-block;
   background-color: white;
   /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
-  z-index: 10; /* Ensures button is above other elements */
+  z-index: 2; /* Ensures button is above other elements */
 }
 
 .contact:hover {
@@ -184,11 +195,13 @@ header {
   padding-right: 50px;
   height: 88vh;
   align-items: center;
+  max-width: 100%;
 }
 
 .third .title {
   text-align: center;
   margin-bottom: 50px;
+  max-width: 100%;
 }
 
 .third .title h1 {
@@ -204,7 +217,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -255,6 +268,7 @@ header {
   align-items: center;
   height: 100vh; /* Full viewport height */
   padding: 0 5%; /* Adjust padding as needed, reduced to prevent overflow */
+  max-width: 100%;
   background-color: #005288; /* Adjusted to your screenshot's background color */
 }
 
@@ -301,11 +315,12 @@ header {
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
   height: 100vh;
+  max-width: 100%;
 }
 
 .fifth .content {
   display: flex; /* This will line up the children side by side */
-  width: 100%; /* Use the full width of the container */
+  max-width: 100%; /* Use the full width of the container */
   justify-content: space-evenly; /* Evenly space the children horizontally */
   align-items: center;
   padding: 5%;
@@ -319,7 +334,7 @@ header {
 
 .fifth .head {
   background-color: #001c4e;
-  width: 100%;
+  max-width: 100%;
   padding: 10px;
   padding-left: 50px;
   font-size: 1rem;
@@ -370,106 +385,6 @@ header {
   margin-top: 20px;
 }
 
-
-
-@media (max-width: 768px) {
-  .fourth {
-    flex-direction: column;
-  }
-
-  .fourth .mission, .fourth .vision {
-    width: 100%; /* Full width for smaller screens */
-    margin-bottom: 20px; /* Add space between the sections on smaller screens */
-  }
-}
-
-.top-content::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  /* background: rgba(0, 0, 0, 0.5); */
-  opacity: 0;
-  animation: fadeIn 1s forwards; /* Background overlay appears immediately */
-}
-
-@keyframes animate__fadeInUp {
-  to {
-    opacity: 1;
-  }
-} 
-
-.top-content h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  animation: fadeInUp 4s forwards; /* Background overlay appears immediately */
-  color: white;
-  /* text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff; */
-
-}
-
-
-.top-content h3 {
-  font-size: 1.5em;
-  color: black;
-  animation: fadeInUp 4s forwards; /* Background overlay appears immediately */
-  /* text-shadow: 3px 3px 5px #fff, -3px -3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff; */
-
-}
-
-h4 {
-  font-size: 1.5em;
-  font-family: Georgia, serif;
-}
-
-.service{
-  position: relative;
-  background: url('system.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 5em 2em;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin: 40px;  
-}
-
-.service h2{
-  font-size: 2.5em;
-
-}
-
-.parent {
-  text-align: center;
-  padding: 2em;
-}
-
-.yellow-rectangle {
-  background: #a5c9ff;
-  padding: 2em;
-  text-align: center;
-  font-size: 30px;
-}
-
-.yellow-rectangle h2 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.yellow-rectangle h5 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.cta-button {
-  display: inline-block;
-  padding: 0.5em 1em;
-  background: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
 footer {
   background: #333;
   color: white;
@@ -477,7 +392,8 @@ footer {
   padding: 10px;
   position:relative;
   bottom: 0;
-  width: 100%;
+  max-width: 100%;
+
   }
 
 /* Responsive Design */
@@ -528,6 +444,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+  html, body{
+    height: 100%;
+      margin: 0;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  main{
+    flex: 1 0 auto; /* Flex-grow to take up space and push footer down */
+  }
   .header-container {
     flex-direction: row;
     justify-content: space-between;
@@ -557,6 +485,10 @@ footer {
     margin-right: 10px; /* Adjust as needed */
   }
 
+  .page-container {
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+
   .top-content h1 {
     font-size: 2em;
     color: white;
@@ -564,6 +496,16 @@ footer {
 
   .second {
     height: 70%;
+  }
+
+  .second .title {
+    margin-bottom: 0px;
+  }
+  .second .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px; /* Space between image and text */
   }
 
   .second .title img{
@@ -576,6 +518,11 @@ footer {
 
   .second .description img{
     width: 95%;
+  }
+
+  .third {
+    padding-left: 20px; /* Reduce padding for smaller screens */
+    padding-right: 20px; /* Reduce padding for smaller screens */
   }
 
   .third .title {
@@ -594,15 +541,21 @@ footer {
   }
 
   .third .image img{
-    width: 80%;
+    width: 60%;
   }
 
   .fifth {
     height: 80%;
+    max-width: 100%;
   }
 
-  .fifth img {
-    width: 80%;
+  .fifth .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fifth .content img {
+    width: 100%;
   }
 
   .fourth{
@@ -619,31 +572,178 @@ footer {
 }
 
 @media (max-width: 480px) {
+  html, body{
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  main{
+    flex: 1 0 auto; /* Flex-grow to take up space and push footer down */
+  }
+
+  .logo img{
+    height: 66px;
+  }
+
+  .header{
+    height: 5vh;
+  }
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    order: 2; /* Place the menu next to the social icons */
+    margin-left: auto;
+    max-width: 100%;
+  }
+
+  .menu-bar {
+    display: flex;
+    align-items: right;
+    order: 3;
+    margin-left: 20px;
+  }
+
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+    order: 1;
+    gap: 1em;
+    margin-right: 10px; /* Adjust as needed */
+  }
+  .page-container {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    min-height: 43vh;
+  }
+
   .top-content {
-    height: 50vh;
+    height: auto;
+    min-height: 35vh;
+    max-width: 100%;
+  }
+
+  .top-content .overlay {
+    width: 40%;
+    height: 45%;
+    align-items: center;
+    top: 7em;
+  }
+
+  .contact {
+    font-size: 0.5em;
+    top: 31em;
+    left: 1.2em;
   }
 
   .top-content h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
-  .third .title h1 {
-    font-size: 1.2em;
+  .second {
+    height: fit-content; 
+  }
+
+  .second .title {
+    margin-bottom: 0px;
+  }
+  .second .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px; /* Space between image and text */
+  }
+
+  .second .title img{
+    width: 100%;
+  }
+
+  .second .image img{
+    width: 100%;
+  }
+
+  .second .description img{
+    width: 160px;
+  }
+
+  .third {
+    padding: 10px;
+  }
+  .third .title {
+    font-size: 0.4em;
+    padding: 0%;
+    margin-bottom: 0px;
   }
 
   .third .service-info {
     flex-direction: column;
+    text-align: left;
+    height: 70%;
+    align-items: center;
+    font-size: 0.8em;
+    margin-bottom: 2px;
+    width: 80%;
   }
 
-  .fifth img {
-    width: 100%;
+  .third .option a {
+    font-size: 0.8em;
   }
 
-  .fourth h2 {
-    font-size: 3em;
+  .third .image img{
+    width: 80px;
+    padding-left: 250px;
   }
 
-  .fourth p {
-    font-size: 1.5rem;
+  .fifth .head {
+    font-size: 0.7em;
+    padding: 2px;
+    padding-left: 10px;
+  }
+
+  .fifth {
+    height: 80%;
+    max-width: 100%;
+  }
+
+  .fifth .content {
+    display: flex;
+    flex-direction: row;
+    display: absolute;
+  }
+
+  .fifth .content img {
+    width: 120px;
+  }
+  .fourth{
+    height: 80%;
+  }
+
+  .fourth .text-container h2{
+    font-size: 2em;
+  }
+
+  .fourth .text-container p{
+    font-size: 1em;
+  }
+
+  .sixth {
+    max-width: 100%;
+    max-height: fit-content;
+  }
+  .sixth .head h1{
+    font-size: 1em;
+  }
+  .sixth .details p{
+    font-size: 0.7em;
   }
 }
