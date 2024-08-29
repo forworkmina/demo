@@ -481,40 +481,169 @@ footer {
   }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .topnav {
-    display: none;
-    flex-direction: column;
+@media (max-width: 1024px) {
+  .logo {
+    display: flex;
+  }
+  .logo img {
+    height: 100px;
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    order: 2; /* Place the menu next to the social icons */
+  }
+
+  .social-media-icons {
+    order: 1; /* Ensure social icons are before the menu */
+    margin-left: auto; /* Push them to the right */
+    display: flex;
+    gap: 1em;
+  }
+
+  .page-container {
+    margin-left: 0;
+  }
+
+  .third .option a {
+    font-size: 1.2em;
+  }
+
+  .fifth img {
+    width: 50%;
+  }
+
+  .sixth .content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    order: 2; /* Place the menu next to the social icons */
+    margin-left: auto;
   }
 
   .menu-bar {
     display: flex;
+    align-items: right;
+    order: 3;
+    margin-left: 20px;
+  }
+
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+    order: 1;
+    gap: 1em;
+    margin-right: 10px; /* Adjust as needed */
   }
 
   .top-content h1 {
     font-size: 2em;
-    color: white; /* Change text color for smaller screens */
+    color: white;
   }
 
-  .yellow-rectangle h2 {
+  .second {
+    height: 70%;
+  }
+
+  .second .title img{
+    width: 90%;
+  }
+
+  .second .image img{
+    width: 90%;
+  }
+
+  .second .description img{
+    width: 95%;
+  }
+
+  .third .title {
+    font-size: 0.6em;
+  }
+
+  .third .service-info {
+    flex-direction: column;
+    text-align: left;
+    height: 80%;
+    align-items: center;
+  }
+
+  .third .option a {
+    font-size: 1.0em;
+  }
+
+  .third .image img{
+    width: 80%;
+  }
+
+  .fifth {
+    height: 80%;
+  }
+
+  .fifth img {
+    width: 80%;
+  }
+
+  .fourth{
+    height: 80%;
+  }
+
+  .fourth .text-container h2{
+    font-size: 3em;
+  }
+
+  .fourth .text-container p{
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-content {
+    height: 50vh;
+  }
+
+  .top-content h1 {
+    font-size: 1.5em;
+  }
+
+  .third .title h1 {
     font-size: 1.2em;
   }
-  .yellow-rectangle h5 {
-    font-size: 0.8em;
-  }
-  .service h2 {
-    font-size: 1.8em;
-  }
-  .service h4 {
-    font-size: 1em;
+
+  .third .service-info {
+    flex-direction: column;
   }
 
-  .top-content {
-    margin: 10px;
+  .fifth img {
+    width: 100%;
   }
 
-  .service{
-    margin: 20px;  
+  .fourth h2 {
+    font-size: 3em;
+  }
+
+  .fourth p {
+    font-size: 1.5rem;
   }
 }
