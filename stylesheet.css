@@ -599,24 +599,6 @@ footer {
     align-items: center;
     max-width: 100%;
   }
-
-  /* .topnav {
-    flex-direction: column;
-    order: 2; /* Place the menu next to the social icons */
-    /* margin-left: auto;
-    max-width: 100%;
-    display: none;
-  }
-
-  .topnav a{
-    display: block;
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to each item */
-  }
-
-  /* .topnav a:last-child {
-    border-bottom: none; /* Remove border from the last item */
   
     /* Ensure the topnav starts off hidden on smaller screens */
 .topnav {
