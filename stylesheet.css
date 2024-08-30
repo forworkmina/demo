@@ -464,7 +464,7 @@ footer {
   }
 
   .topnav {
-    display: flex;
+    display: none;
     flex-direction: row;
     order: 2; /* Place the menu next to the social icons */
     margin-left: auto;
@@ -600,13 +600,58 @@ footer {
     max-width: 100%;
   }
 
-  .topnav {
-    display: flex;
-    flex-direction: row;
+  /* .topnav {
+    flex-direction: column;
     order: 2; /* Place the menu next to the social icons */
-    margin-left: auto;
+    /* margin-left: auto;
     max-width: 100%;
+    display: none;
   }
+
+  .topnav a{
+    display: block;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to each item */
+  }
+
+  /* .topnav a:last-child {
+    border-bottom: none; /* Remove border from the last item */
+  
+    /* Ensure the topnav starts off hidden on smaller screens */
+.topnav {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Show the menu items when .responsive is added */
+.topnav.responsive {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 8%; /* Position it just below the hamburger menu */
+  left: 0;
+  background-color: white; /* Background color for the dropdown menu */
+  z-index: 1000; /* Ensure it overlays other content */
+  padding: 10px;
+}
+
+/* Style each menu item in the dropdown */
+.topnav.responsive a {
+  display: block;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to each item */
+}
+
+/* Remove the border from the last item */
+.topnav.responsive a:last-child {
+  border-bottom: none;
+}
+
 
   .menu-bar {
     display: flex;
@@ -745,5 +790,8 @@ footer {
   }
   .sixth .details p{
     font-size: 0.7em;
+  }
+  footer p{
+    font-size: 10px;
   }
 }
