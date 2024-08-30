@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap');
+.body{
+    font-family: 'M PLUS Rounded 1c', sans-serif; /* Add this to import the font */
+}
 header {
   background: white;
   color: black;
@@ -9,7 +12,6 @@ header {
   border-bottom: 1px solid #ddd;
   margin-top: 0px;
   height: 5em;
-
 }
 
 .header-container {
