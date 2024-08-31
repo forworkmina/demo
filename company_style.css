@@ -230,7 +230,7 @@ header {
       margin-right: 10px; /* Adjust as needed */
     }
     
-    .company-top h1{
+    .company-top .overlay h1{
       font-size: 1.2em;
     }
 
@@ -239,7 +239,7 @@ header {
     } */
 
     .company-content img{
-      max-width: 100;
+      max-width: 300px;
     }
      
     footer p{
