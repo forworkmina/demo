@@ -207,7 +207,7 @@ footer {
       margin-right: 10px; /* Adjust as needed */
     }
     
-    .about-section h1{
+    .about-section .overlay h1{
       font-size: 1.5em;
     }
 

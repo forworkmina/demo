@@ -58,6 +58,14 @@
         const nav = document.querySelector('.topnav');
         nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
     }
+    document.querySelector('.menu-bar').addEventListener('click', function() {
+      var topnav = document.querySelector('.topnav');
+      if (topnav.classList.contains('responsive')) {
+        topnav.classList.remove('responsive');
+      } else {
+        topnav.classList.add('responsive');
+      }
+    });
 </script>
 </body>
 </html>

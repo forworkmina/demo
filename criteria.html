@@ -117,6 +117,14 @@
             
         window.location.href = `category.html?area=${area}&category=${category}&keyword=${keyword}`;
     }
+    document.querySelector('.menu-bar').addEventListener('click', function() {
+      var topnav = document.querySelector('.topnav');
+      if (topnav.classList.contains('responsive')) {
+        topnav.classList.remove('responsive');
+      } else {
+        topnav.classList.add('responsive');
+      }
+    });
     </script>
     <script src="criteria_script.js"></script> <!-- Link to your JavaScript file -->
 </body>
