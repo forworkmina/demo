@@ -707,10 +707,11 @@ footer {
   .third {
     padding: 10px;
   }
-  .third .title {
-    font-size: 0.4em;
+  .title {
+    font-size: 0.7em;
     padding: 0%;
     margin-bottom: 0px;
+    width: 80%;
   }
 
   .third .service-info {
