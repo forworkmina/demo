@@ -196,6 +196,7 @@ header {
   height: 88vh;
   align-items: center;
   max-width: 100%;
+  width: 80%;
 }
 
 .third .title {
