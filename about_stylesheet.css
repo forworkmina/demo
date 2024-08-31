@@ -124,7 +124,114 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    html, body{
+      height: 100%;
+      margin: 0;
+      max-width: 100%;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+    main{
+      flex: 1 0 auto; /* Flex-grow to take up space and push footer down */
+    }
+  
+    .logo img{
+      height: 66px;
+    }
+  
+    .header{
+      height: 5vh;
+    }
+    .header-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+    }
+    
+      /* Ensure the topnav starts off hidden on smaller screens */
+  .topnav {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Show the menu items when .responsive is added */
+  .topnav.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8%; /* Position it just below the hamburger menu */
+    left: 0;
+    background-color: white; /* Background color for the dropdown menu */
+    z-index: 1000; /* Ensure it overlays other content */
+    padding: 10px;
+  }
+  
+  /* Style each menu item in the dropdown */
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to each item */
+  }
+  
+  /* Remove the border from the last item */
+  .topnav.responsive a:last-child {
+    border-bottom: none;
+  }
+  
+    .menu-bar {
+      display: flex;
+      align-items: right;
+      order: 3;
+      margin-left: 20px;
+    }
+  
+    .social-media-icons {
+      display: flex;
+      align-items: center;
+      order: 1;
+      gap: 1em;
+      margin-right: 10px; /* Adjust as needed */
+    }
+    
+    .about-section h1{
+      font-size: 1.5em;
+    }
+
+    .about-section {
+      height: 35vh;
+    }
+  
+    .about-content {
+      height: 50vh;
+    }
+
+    .about-content img {
+      height: 100px;
+    }
+
+    .about-content h4 {
+      font-size: 1em;
+    }
+
+    .about-content p{
+      font-size: 0.8em;
+    }
+     
+    footer p{
+      font-size: 10px;
+    }
   }
