@@ -212,14 +212,14 @@ footer {
     }
 
     .about-section {
-      height: 35vh;
+      height: 25vh;
     }
   
     .about-content {
-      height: 50vh;
+      height: 70%;
     }
 
-    .about-content img {
+    .about-content .image img {
       height: 100px;
     }
 

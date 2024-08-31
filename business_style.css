@@ -301,14 +301,18 @@ footer {
         margin-right: 10px; /* Adjust as needed */
       }
       
+      .business-top {
+        height: 25vh;
+      }
       .business-top .overlay h1 {
         font-size: 1.2em;
       }
 
       .title {
-        font-size: 0.4em;
+        font-size: 0.7em;
         padding: 0%;
         margin-bottom: 0px;
+        width: 80%;
       }
 
       .first .content .img {
@@ -319,14 +323,27 @@ footer {
         width: 300px;
       }
 
+      .second {
+        max-width: 100%;
+        height: 35vh;
+      }
+
+      .second .text {
+        font-size: 0.8em;
+      }
+
       .third .content img{
         width: 400px;
         margin: 0;
       }
 
-      .fourth .content img {
-        width: 450px;
+      .fourth {
+        height: 40vh;
+      }
 
+      .fourth .content img {
+        width: 380px;
+        margin: 0;
       }
 
       .fourth .image img {
