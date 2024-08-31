@@ -229,14 +229,15 @@ header {
       gap: 1em;
       margin-right: 10px; /* Adjust as needed */
     }
+
     
     .company-top .overlay h1{
       font-size: 1.2em;
     }
 
-    /* .company-top {
-      
-    } */
+    .company-top {
+      height: 35vh;
+    }
 
     .company-content img{
       max-width: 300px;
