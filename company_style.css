@@ -180,7 +180,7 @@ header {
       max-width: 100%;
     }
 
-      /* Ensure the topnav starts off hidden on smaller screens */
+    /* Ensure the topnav starts off hidden on smaller screens */
   .topnav {
     display: none; /* Hidden by default */
     position: absolute;
