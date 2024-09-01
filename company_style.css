@@ -190,29 +190,29 @@ header {
   }
 
   /* Show the menu items when .responsive is added */
-  .topnav.responsive {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 8%; /* Position it just below the hamburger menu */
-    left: 0;
-    background-color: white; /* Background color for the dropdown menu */
-    z-index: 1000; /* Ensure it overlays other content */
-    padding: 10px;
-  }
+.topnav.responsive {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 8%; /* Position it just below the hamburger menu */
+  left: 0;
+  background-color: white; /* Background color for the dropdown menu */
+  z-index: 1000; /* Ensure it overlays other content */
+  padding: 10px;
+}
 
-  /* Style each menu item in the dropdown */
-  .topnav.responsive a {
-    display: block;
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to each item */
-  }
+/* Style each menu item in the dropdown */
+.topnav.responsive a {
+  display: block;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to each item */
+}
 
-  /* Remove the border from the last item */
-  .topnav.responsive a:last-child {
-    border-bottom: none;
-  }
+/* Remove the border from the last item */
+.topnav.responsive a:last-child {
+  border-bottom: none;
+}
 
     .menu-bar {
       display: flex;
