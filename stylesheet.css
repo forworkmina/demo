@@ -195,14 +195,14 @@ header {
   padding-right: 50px;
   height: 88vh;
   align-items: center;
-  max-width: 100%;
-  width: 80%;
+  /* max-width: 100%; */
+  width: 100%;
 }
 
 .third .title {
   text-align: center;
-  margin-bottom: 50px;
-  max-width: 100%;
+  margin-bottom: 0px;
+  width: 90%;
 }
 
 .third .title h1 {
