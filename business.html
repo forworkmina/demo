@@ -87,6 +87,26 @@
   <footer>
     <p>&copy; 2024 株式会社ネクストインパクト. All rights reserved.</p>
   </footer>
+  <!-- Chatbot HTML structure -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+        <img src="avatar.png" alt="Support Avatar" class="avatar">
+        チャットボット
+        <span class="close-btn" id="closeChatWidget">&times;</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+        <div class="chat-message bot-message">
+            <img src="avatar.png" alt="Support Avatar" class="avatar">
+            <span class="message-text">どのようなことが知りたいですか</span>
+        </div>
+    </div>
+    <div class="chat-footer">
+        <button class="chat-button" onclick="getResponse('option1')">どんな支援金があるか</button>
+        <button class="chat-button" onclick="getResponse('option2')">補助金に関するご相談</button>
+        <button class="chat-button" onclick="getResponse('option3')">補助金に関するサポートを頼みたい</button>
+    </div>
+  </div>
+<button class="chat-toggle" id="chatToggle">お困りの方はこちら</button>
   <script>
     function toggleMenu() {
       var x = document.querySelector(".topnav");
