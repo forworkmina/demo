@@ -126,6 +126,10 @@ main {
     color: #666; /* Slightly lighter color for the subtext */
 }
 
+.category-box p{
+  margin-right: 150px; /* Prevent text from going under the button */
+}
+
 .upper-limit {
     display: inline-block;
     background-color: #9bb3c8; /* Light green background */
