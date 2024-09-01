@@ -79,6 +79,14 @@
         x.style.display = "block";
       }
     }
+    document.querySelector('.menu-bar').addEventListener('click', function() {
+      var topnav = document.querySelector('.topnav');
+      if (topnav.classList.contains('responsive')) {
+        topnav.classList.remove('responsive');
+      } else {
+        topnav.classList.add('responsive');
+      }
+    });
   </script>
   <script src="chatbot.js"></script>
 </body>
