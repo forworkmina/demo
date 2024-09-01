@@ -143,11 +143,11 @@ footer {
     main{
       flex: 1 0 auto; /* Flex-grow to take up space and push footer down */
     }
-  
+
     .logo img{
       height: 66px;
     }
-  
+
     .header{
       height: 5vh;
     }
@@ -157,7 +157,7 @@ footer {
       align-items: center;
       max-width: 100%;
     }
-    
+
       /* Ensure the topnav starts off hidden on smaller screens */
   .topnav {
     display: none; /* Hidden by default */
@@ -166,7 +166,7 @@ footer {
     width: 100%;
     z-index: 1;
   }
-  
+
   /* Show the menu items when .responsive is added */
   .topnav.responsive {
     display: flex;
@@ -178,7 +178,7 @@ footer {
     z-index: 1000; /* Ensure it overlays other content */
     padding: 10px;
   }
-  
+
   /* Style each menu item in the dropdown */
   .topnav.responsive a {
     display: block;
@@ -186,19 +186,19 @@ footer {
     padding: 10px;
     border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to each item */
   }
-  
+
   /* Remove the border from the last item */
   .topnav.responsive a:last-child {
     border-bottom: none;
   }
-  
+
     .menu-bar {
       display: flex;
       align-items: right;
       order: 3;
       margin-left: 20px;
     }
-  
+
     .social-media-icons {
       display: flex;
       align-items: center;
@@ -206,7 +206,7 @@ footer {
       gap: 1em;
       margin-right: 10px; /* Adjust as needed */
     }
-    
+
     .about-section .overlay h1{
       font-size: 1.5em;
     }
@@ -214,7 +214,7 @@ footer {
     .about-section {
       height: 25vh;
     }
-  
+
     .about-content {
       height: 70%;
     }
@@ -230,7 +230,7 @@ footer {
     .about-content p{
       font-size: 0.8em;
     }
-     
+
     footer p{
       font-size: 10px;
     }

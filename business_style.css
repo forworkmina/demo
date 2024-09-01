@@ -7,6 +7,7 @@ body{
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  font-family: 'M PLUS Rounded 1c', sans-serif; /* Add this to import the font */
 }
 main{
   flex: 1 0 auto; /* Flex-grow to take up space and push footer down */
@@ -177,7 +178,7 @@ header {
 }
 
 .second .content img{
-    width: 60%;
+    width: 90%;
     margin: 1em;
 }
 
@@ -221,4 +222,137 @@ footer {
   /* Ensure the footer is at the bottom */
   margin-top: auto;
   display: relative;
+    }
+
+    @media (max-width: 480px) {
+      html, body{
+        height: 100%;
+        margin: 0;
+        max-width: 100%;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+      }
+      main{
+        flex: 1 0 auto; /* Flex-grow to take up space and push footer down */
+      }
+
+      .logo img{
+        height: 66px;
+      }
+
+      .header{
+        height: 5vh;
+      }
+      .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+      }
+
+        /* Ensure the topnav starts off hidden on smaller screens */
+    .topnav {
+      display: none; /* Hidden by default */
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      z-index: 1;
+    }
+
+    /* Show the menu items when .responsive is added */
+    .topnav.responsive {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 8%; /* Position it just below the hamburger menu */
+      left: 0;
+      background-color: white; /* Background color for the dropdown menu */
+      z-index: 1000; /* Ensure it overlays other content */
+      padding: 10px;
+    }
+
+    /* Style each menu item in the dropdown */
+    .topnav.responsive a {
+      display: block;
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to each item */
+    }
+
+    /* Remove the border from the last item */
+    .topnav.responsive a:last-child {
+      border-bottom: none;
+    }
+
+      .menu-bar {
+        display: flex;
+        align-items: right;
+        order: 3;
+        margin-left: 20px;
+      }
+
+      .social-media-icons {
+        display: flex;
+        align-items: center;
+        order: 1;
+        gap: 1em;
+        margin-right: 10px; /* Adjust as needed */
+      }
+      .business-top {
+        height: 25vh;
+      }
+      
+      .business-top .overlay h1 {
+        font-size: 1.2em;
+      }
+
+      .title {
+        font-size: 0.7em;
+        padding: 0%;
+        margin-bottom: 0px;
+        width: 80%;
+      }
+
+      .first .content .img {
+        width: 400px;
+      }
+
+      .first .result img {
+        width: 300px;
+      }
+
+      .second {
+        max-width: 100%;
+        height: 35vh;
+      }
+
+      .second .text {
+        font-size: 0.8em;
+      }
+
+      .third .content img{
+        width: 400px;
+        margin: 0;
+      }
+
+      .fourth {
+        height: 40vh;
+      }
+
+      .fourth .image img {
+        width: 300px;
+      }
+
+      .fourth .content img {
+        width: 380px;
+        margin: 0;
+      }
+
+
+      footer p{
+        font-size: 10px;
+      }
     }
