@@ -143,8 +143,8 @@ header {
   }
   
   .first .content img{
-    width: 900px;
-    margin: 1em;
+    width: 95%;
+    margin: 0.5em;
   }
 
   .first .result img {
