@@ -90,6 +90,7 @@ header {
   width: 100%;
   text-align: left;
   padding-left: 10px;
+  margin: 0 auto;
 }
 
 .contact-form label {
