@@ -64,7 +64,6 @@ header {
       margin: 4px;
     }
 .contact-section {
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 5em); /* Adjusts height considering the header size */
